@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <title>James Collier - Data Scientist & Financial Analyst</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,127 +13,562 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f5f5f5;
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+            min-height: 100vh;
         }
 
-        header {
-            background: #fff;
-            padding: 2rem;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        nav {
-            padding: 1rem;
-            background: #fff;
-            margin-bottom: 2rem;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #666;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-            padding: 2rem;
-            max-width: 1400px;
+        .container {
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 30px;
+            min-height: 100vh;
         }
 
-        .gallery-item {
-            position: relative;
+        .sidebar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+
+        .main-content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6c757d, #495057);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 48px;
+            color: white;
+            font-weight: bold;
             overflow: hidden;
-            border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
+            border: 3px solid #6c757d;
         }
 
-        .gallery-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .gallery-item img {
+        .profile-img img {
             width: 100%;
-            height: 300px;
+            height: 100%;
             object-fit: cover;
-            display: block;
+            border-radius: 50%;
         }
 
-        footer {
+        .contact-info {
             text-align: center;
-            padding: 2rem;
-            background: #fff;
-            margin-top: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .contact-info h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .contact-info p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .contact-item i {
+            width: 20px;
+            margin-right: 10px;
+            color: #6c757d;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 18px;
+            border-bottom: 2px solid #6c757d;
+            padding-bottom: 5px;
+        }
+
+        .skill-item {
+            margin-bottom: 15px;
+        }
+
+        .skill-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .skill-bar {
+            background: #e0e0e0;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #6c757d, #495057);
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .main-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .main-header h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .main-header h2 {
+            font-size: 20px;
+            color: #6c757d;
+            font-weight: 400;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #6c757d;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title i {
+            margin-right: 10px;
+            color: #6c757d;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(108, 117, 125, 0.05);
+            border-radius: 10px;
+            border-left: 4px solid #6c757d;
+        }
+
+        .experience-header {
+            margin-bottom: 10px;
+        }
+
+        .job-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .company {
+            font-size: 16px;
+            color: #6c757d;
+            font-weight: 500;
+        }
+
+        .duration {
+            color: #666;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .job-description {
+            margin-top: 15px;
+        }
+
+        .job-description ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .job-description li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+            color: #555;
+        }
+
+        .job-description li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #6c757d;
+            font-weight: bold;
+        }
+
+        .education-item {
+            background: rgba(108, 117, 125, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #6c757d;
+        }
+
+        .github-section {
+            background: rgba(108, 117, 125, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .github-note {
+            color: #666;
+            font-style: italic;
+            text-align: center;
         }
 
         @media (max-width: 768px) {
-            .gallery-grid {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                padding: 1rem;
+            .container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 10px;
             }
 
-            nav ul {
-                flex-direction: column;
-                text-align: center;
-                gap: 1rem;
+            .sidebar {
+                position: static;
+                order: 2;
             }
+
+            .main-content {
+                order: 1;
+                padding: 20px;
+            }
+
+            .main-header h1 {
+                font-size: 28px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #e9ecef 0%, #dee2e6 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>James E Collier</h1>
-        <p>Landscapes and Travel</p>
-    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-img">
+                <img src="https://drive.google.com/uc?export=view&id=1BfEeIES5XndQTFdqa3Bp9Q2qNQa2Lbd_" alt="James Collier Profile Photo" onerror="this.style.display='none'; this.parentElement.innerHTML='JC';">
+            </div>
+            
+            <div class="contact-info">
+                <h1>James Collier</h1>
+                <p>Data Scientist & Financial Analyst</p>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Nashville, TN</span>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>jamesecollier@gmail.com</span>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+1 409 651 6384</span>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>jamesecollier1981</span>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>jamesecollier81</span>
+                </div>
+            </div>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="nature.html">Nature</a></li>
-            <li><a href="portraits.html">Portraits</a></li>
-            <li><a href="street.html">Street</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+            <div class="section">
+                <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="skill-item">
+                    <div class="skill-name">SQL / PL-SQL</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">SAS</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
 
-    <main class="gallery-grid">
-        <!-- Example with Google Photos URLs -->
-        <!-- Replace these URLs with your actual Google Photos image URLs -->
-        <a href="https://lh3.googleusercontent.com/pw/AP1GczNoCeSpoJVeza7hrVDHvmV5TUWF6WXae49mH2CW_RQ-34vUg_QpY99dfWy06vrB0ME0UX_Fvj04DOjWqtsmtg6HjgQGuzrMm8sBOFaVJvoQfOuExfC5O8kBUg9dFNAmkPSHySGU5GCRV7jWLzi3uTZ61g=w1832-h1266-s-no-gm?authuser=0" 
-           class="gallery-item" 
-           data-lightbox="gallery">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczNoCeSpoJVeza7hrVDHvmV5TUWF6WXae49mH2CW_RQ-34vUg_QpY99dfWy06vrB0ME0UX_Fvj04DOjWqtsmtg6HjgQGuzrMm8sBOFaVJvoQfOuExfC5O8kBUg9dFNAmkPSHySGU5GCRV7jWLzi3uTZ61g=w1832-h1266-s-no-gm?authuser=0" 
-                 alt="Photo description"
-                 onload="this.classList.add('loaded')">
-        </a>
-        
-        <!-- Add more gallery items following the same pattern -->
-    </main>
+            <div class="section">
+                <h3><i class="fas fa-database"></i> Databases</h3>
+                <div class="skill-item">
+                    <div class="skill-name">PostgreSQL</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">MySQL</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Redshift</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">DB2</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
 
-    <footer>
-        <p>&copy; 2025 James E Collier. All rights reserved.</p>
-    </footer>
+            <div class="section">
+                <h3><i class="fas fa-chart-line"></i> Data Visualization</h3>
+                <div class="skill-item">
+                    <div class="skill-name">Tableau</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Power BI</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Looker</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Matplotlib/Seaborn</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+            <div class="section">
+                <h3><i class="fas fa-robot"></i> Machine Learning</h3>
+                <div class="skill-item">
+                    <div class="skill-name">Scikit-learn</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Imbalanced-learn</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1>James Collier</h1>
+                <h2>Data Scientist & Financial Analyst</h2>
+            </header>
+
+            <section>
+                <h2 class="section-title">
+                    <i class="fab fa-github"></i>
+                    GitHub Projects
+                </h2>
+                <div class="github-section">
+                    <div class="github-note">
+                        <i class="fab fa-github" style="font-size: 24px; color: #6c757d; margin-bottom: 10px;"></i>
+                        <p>Visit my GitHub profile <strong>@jamesecollier81</strong> to explore my data science projects, machine learning implementations, and analytical tools built with Python, SQL, and various visualization libraries.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">
+                    <i class="fas fa-briefcase"></i>
+                    Professional Experience
+                </h2>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="job-title">Associate, Enterprise Risk Data</div>
+                        <div class="company">Upgrade</div>
+                        <div class="duration">September 2022 - Present | Remote</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Developed and maintained reports, dashboards, and data products using <span class="highlight">SQL, Python, and Tableau</span></li>
+                            <li>Created a master IP lookup in Tableau utilizing Amazon Redshift integrating data from 5 IP vendors, <strong>reducing research time by 60%</strong></li>
+                            <li>Led identification and reporting of risk metrics using <span class="highlight">scikit-learn and imbalanced-learn</span> for machine learning analysis</li>
+                            <li>Mentored junior data analyst in advanced SQL and Python, leading to <strong>15% increase in team productivity</strong></li>
+                            <li>Communicated technical findings to non-technical stakeholders through clear visualizations and presentations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="job-title">Director of Technology & Analysis</div>
+                        <div class="company">JumpCrew</div>
+                        <div class="duration">May 2021 - September 2022 | Remote</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Led development of company-wide data warehouse and ETL system using <span class="highlight">Google BigQuery, Data Studio, and Python</span></li>
+                            <li>Championed IT Steering Committee, driving strategic vision for technology platforms and standards</li>
+                            <li>Developed comprehensive cash flow reporting for four lines of business with real-time visibility</li>
+                            <li>Created dynamic delinquency reporting system, <strong>improving collections effectiveness by 5-10%</strong></li>
+                            <li>Managed internal resources and external consulting firms to build robust tech stack</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="job-title">Senior Retail Banking Analyst</div>
+                        <div class="company">BBVA</div>
+                        <div class="duration">August 2018 - April 2021 | Remote</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Implemented Payments Line of Business <span class="highlight">Tableau site</span> with key P&L and application volume reports</li>
+                            <li>Optimized SQL/SAS code reducing runtime from <strong>12.5 hours to 15 minutes</strong> using temp tables</li>
+                            <li>Developed Application Funnel reporting identifying issues with pending applications, resulting in <strong>50% more approved cards</strong></li>
+                            <li>Created portfolio optimization strategy increasing purchase and balance active rates by <strong>3%</strong></li>
+                            <li>Conducted A/B testing on email and direct mail campaigns for credit card optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="job-title">Manager of Finance and Business Intelligence</div>
+                        <div class="company">Alula/ipDatatel</div>
+                        <div class="duration">April 2016 - August 2018 | Houston, TX</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Led Business Intelligence initiative implementing <span class="highlight">Qlik Sense and Microsoft Power BI</span></li>
+                            <li>Leveraged disparate data from Salesforce, MySQL, MSSQL, and Excel for actionable intelligence</li>
+                            <li>Developed initial company Dashboard and KPI apps for C-Suite executives and Board of Directors</li>
+                            <li>Generated first insights into device retention, longevity, and territory potential</li>
+                            <li>Led budget process for combined entity after merger, coordinating all departments</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="job-title">Senior Financial Analyst</div>
+                        <div class="company">Conn's</div>
+                        <div class="duration">August 2011 - March 2016 | Houston, TX</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Developed comprehensive financial forecast model for C-Suite including five-year long-range plan</li>
+                            <li>Led budget process for entire <strong>$2 billion company</strong>, coordinating multiple analysts</li>
+                            <li>Played key role in asset-based lending expansions ($800M) and asset-backed securities transaction ($1.1B)</li>
+                            <li>Identified valuable customers in specific FICO bands, resulting in <strong>over $1 million additional revenue</strong></li>
+                            <li>Delivered roll rate model for credit portfolio to determine bad debt provision per FASB standards</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    Education & Certifications
+                </h2>
+                
+                <div class="education-item">
+                    <div class="experience-header">
+                        <div class="job-title">BBA, MBA in Finance</div>
+                        <div class="company">Lamar University</div>
+                    </div>
+                </div>
+                
+                <div class="education-item" style="margin-top: 15px;">
+                    <div class="experience-header">
+                        <div class="job-title">Data Scientist with Python Track</div>
+                        <div class="company">DataCamp</div>
+                        <div class="duration">Certificate #114137</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Animate skill bars on page load
+        window.addEventListener('load', function() {
+            const skillBars = document.querySelectorAll('.skill-progress');
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0%';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 500);
+            });
+        });
+
+        // Add smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
