@@ -550,7 +550,7 @@ Explore the private Yellow House reserve - a 200-hectare forest sanctuary.
 
 ---
 
-## ✈️ DAY 8 (Dec 11) - ARRIVAL & GIANT TORTOISES
+## ✈️ DAY 8 (Dec 11) - ARRIVAL
 
 **Island:** Santa Cruz  
 **Hotel:** Puerto Ayora, Santa Cruz  
