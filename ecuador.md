@@ -823,6 +823,10 @@ World-class snorkeling focused on marine wildlife.
 - Snorkel
 - Relax with a book!
 
+**8:00 AM - 11:00 AM: Local craft beer scene**
+
+- Breweries and lunch! 
+
 **3:00 PM - 5:00 PM: ⛴️ FERRY TO ISABELA ISLAND**
 
 **Ferry Details:**
@@ -1132,46 +1136,60 @@ Unique lava tunnel formations partially submerged in the ocean. Created by lava 
 
 ## ✈️ DAY 15 (Dec 18) - RETURN FLIGHT TO QUITO
 
-**Location:** Highlands Santa Cruz → Quito
-
-**Hotel:** Courtyard by Marriott Quito Airport
-
-**Duration:** Midday flight, afternoon in Quito
+**Location:** Highlands Santa Cruz → Quito **Hotel:** Courtyard by Marriott Quito Airport **Duration:** Leisurely morning, afternoon flight
 
 ### Timeline
 
-**8:30 AM - 9:30 AM: Breakfast at Royal Palm**
+**7:00 AM - 8:00 AM: Breakfast at Royal Palm**
 
-- Enjoy breakfast overlooking the lush highland grounds.
-- Take a quick walk to the property's private **lava tunnel**—it’s one of the largest on the island and located right on the hotel site.
+- Enjoy breakfast overlooking the lush highland grounds
+- Leisurely last morning in the Galápagos
 
-**9:45 AM - 10:30 AM: Transfer to Baltra Airport**
+**8:00 AM - 9:30 AM: 🐢 El Chato Tortoise Reserve**
 
-- Checkout and take a taxi from the Highlands to the Itabaca Channel (~20-25 mins).
-- Cross the channel via ferry (5–10 mins).
-- Take the "Lobito" bus to the airport terminal (10 mins).
+- Short taxi from Royal Palm (literally across the road)
+- Walk among wild giant tortoises in their natural highland habitat
+- Early morning is the best time — tortoises are most active and light is beautiful
+- Cost: ~$5-10 entry
 
-**10:30 AM - 11:40 AM: Airport Check-in**
+**9:30 AM - 10:30 AM: Royal Palm Lava Tunnel
 
-- Arrive at Baltra Airport (GPS).
-- Security and luggage check-in.
+- Return to Royal Palm
+- Explore the property's private lava tunnel — one of the largest on the island
+- Check out and collect luggage
 
-**11:40 AM - 4:10 PM: ✈️ FLIGHT: GALÁPAGOS → QUITO**
+**10:30 AM - 11:30 AM: Lunch & Checkout**
 
-- **Airline:** Avianca (or similar)
-- **Departure:** 11:40 AM
-- **Arrival:** 4:10 PM
+- Lunch
+- Check out and collect luggage
 
-**4:10 PM - 5:00 PM: Arrival & Courtyard Check-in**
+**11:45 - 12:30 PM: Transfer to Baltra Airport**
 
-- Land at UIO airport.
-- Collect bags and walk/shuttle to the **Courtyard by Marriott Quito Airport**.
+- Taxi from highlands to Itabaca Channel (~20-25 mins)
+- Ferry crossing (~10 mins)
+- Lobito bus to terminal (~10 mins)
+- Arrive at airport with comfortable buffer
 
-**5:00 PM onwards: Evening at Airport**
+**12:30 PM - 3:00 PM: Airport Check-in & Departure**
 
-- Dinner at the hotel restaurant.
-- Relax and prepare for your 8:00 AM flight home tomorrow. Staying this close to the terminal means you won't need to leave for the airport until about 5:30 or 6:00 AM tomorrow.
+- Check in, clear security
+- Relax at gate
 
+**3:00 PM - 6:10 PM: ✈️ FLIGHT: GALÁPAGOS → QUITO**
+
+- **Airline:** Avianca
+- **Departure:** 3:00 PM from Baltra (GPS)
+- **Arrival:** 6:10 PM Quito (UIO)
+
+**6:10 PM - 7:00 PM: Arrival & Courtyard Check-in**
+
+- Collect bags and walk/shuttle to Courtyard by Marriott Quito Airport
+
+**7:00 PM onwards: Final Evening**
+
+- Dinner at hotel restaurant
+- Relax and pack for tomorrow
+- No early rush — with an 8:00 AM flight you can leave the hotel around 6:00 AM
 ---
 
 ## ✈️ DAY 16 (Dec 19) - DEPARTURE DAY
@@ -1365,7 +1383,6 @@ Unique lava tunnel formations partially submerged in the ocean. Created by lava 
 - ☐ TCC Transit Control Card application (online: siig-cgreg.gobiernogalapagos.gob.ec)
 - ☐ Travel insurance
 - ☐ Passport validity (6+ months)
-- ☐ Car service/parking for Dec 4 departure
 
 ---
 
