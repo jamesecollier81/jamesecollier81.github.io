@@ -478,7 +478,7 @@ Visit a local coffee plantation to learn how Ecuador's famous coffee is grown an
 ## 🌲 DAY 7 (Dec 10) - NATURE TRAILS & RETURN TO QUITO
 
 **Location:** Mindo Cloud Forest → Quito  
-**Hotel:** Check out of Master Suite, transfer to Wyndham Quito Airport  
+**Hotel:** Check out of Master Suite, transfer to Courtyard by Marriott Quito Airport  
 **Duration:** Morning activity, afternoon transfer
 
 ### Timeline
@@ -509,19 +509,19 @@ Explore the private Yellow House reserve - a 200-hectare forest sanctuary.
 **Cost:** $95 for two 
 **Duration:** 3.5 hours with guide
 
-9:30 AM - 10:00 AM: Return to Lodge & Breakfast**
+**9:30 AM - 10:00 AM: Return to Lodge & Breakfast**
 
 - Hike back to lodge
 - Freshen up
 - Light lunch at lodge restaurant
 
-**12:00 PM - 12:30 PM: Checkout & Depart****
+**12:00 PM - 12:30 PM: Checkout & Depart**
 
 - Check out of your Master Suite
 - Load luggage in transfer vehicle
 - Depart lodge for Quito
 
-**2:30 PM - 2:30 PM: Drive to Quito**
+**12:30 PM - 2:30 PM: Drive to Quito**
 
 - 2-hour drive back to Quito from Mindo
 - Ascend from cloud forest (4,600 ft) back to Quito (9,350 ft)
@@ -530,7 +530,7 @@ Explore the private Yellow House reserve - a 200-hectare forest sanctuary.
 
 **3:00 PM - 4:00 PM: Arrival at Airport Hotel**
 
-- Arrive at Wyndham Quito Airport hotel
+- Arrive at Courtyard by Marriott Quito Airport hotel
 - Check-in (late afternoon arrival)
 - Freshen up and rest
 - Early dinner (optional)
@@ -547,24 +547,6 @@ Explore the private Yellow House reserve - a 200-hectare forest sanctuary.
 
 # PHASE 2: GALÁPAGOS ISLANDS
 
----
-
-## 🏖️ ISABELA BEACHFRONT HOTEL - YOUR BASE
-
-**Accommodation (Dec 14-17): Beachfront hotel in Puerto Villamil**
-
-### Why Staying Beachfront Changes Everything:
-
-- **Direct beach access:** Step out of room onto pristine beach
-- **Concha de Perla snorkeling:** 5-minute walk from hotel
-- **Sunset views:** Enjoy every evening from your private beach or room
-- **Dock access:** Tours depart right from town (no long commute)
-- **Restaurant on premises:** Dine with ocean views
-- **Swimming:** Jump in the ocean anytime
-- **Recovery space:** Comfortable place to relax between activities
-- **Authentic vibe:** Living like a local, not stuck in town center
-
-**Impact:** You gain flexibility, comfort, and maximize your beach time. No wasted time commuting - everything is steps away.
 
 ---
 
@@ -594,31 +576,7 @@ Explore the private Yellow House reserve - a 200-hectare forest sanctuary.
 - Lunch at local restaurant in Puerto Ayora
 - Rest and adjust to island time
 
-**1:30 PM - 3:30 PM: 🐢 RANCHO PRIMICIAS ACTIVITY**
-
-Visit a private reserve to see giant Galápagos tortoises in their natural habitat.
-
-**Experience:**
-
-- Walk among giant Galápagos tortoises
-- See these ancient creatures (200+ years old) moving in their natural environment
-- Observe them feeding on vegetation
-- Take photos up close
-- Explore underground lava tunnels formed by ancient volcanic activity
-- Learn about conservation efforts
-
-**What you'll see:**
-
-- Giant Galápagos tortoises (some weighing 300+ pounds)
-- Natural habitat and vegetation
-- Volcanic landscape
-- Lava tunnels and caves
-- Views of the island
-
-**Duration:** ~2 hours from airport  
-**Cost:** Usually $15-25 per person
-
-> **💡 Tip:** Rancho Primicias is on the way from the airport to Puerto Ayora, so it's a perfect stop during arrival day. You'll see the famous giant tortoises everyone comes to Galápagos for!
+**1:30 PM - 3:30 PM: Visit things in town**
 
 **3:30 PM - 4:30 PM: Check-in & Rest**
 
@@ -746,10 +704,10 @@ World-class snorkeling in pristine waters.
 
 ## ⭐ DAY 10 (Dec 13) - PINZÓN ISLAND SNORKELING 
 
-**Island:** Pinzón Island (morning/early afternoon) → Ferry to Isabela (afternoon)  
+**Island:** Pinzón Island (morning/early afternoon) 
 **Hotel:** Puerto Ayora until ferry, then Puerto Villamil Beachfront, Isabela  
-**Duration:** 7-8 hours (full-day tour) + ferry  
-**Cost:** $155-215 per person (tour) + ~$12 ferry  
+**Duration:** 7-8 hours (full-day tour)
+**Cost:** $155-215 per person (tour)
 **What to bring:** Underwater camera, towel, reef-safe sunscreen, light clothing for ferry
 
 ### Timeline
@@ -807,13 +765,18 @@ World-class snorkeling focused on marine wildlife.
 - Weather-dependent
 - Primarily snorkeling focus, so hiking is minimal (15-20 minutes)
 
-**3:00 PM onwards: Boat Return
+**3:00 PM onwards: Boat Return**
 
 - Return to Puerto Ayora around 3:00-3:30 PM
 
 ---
 
 ## 🐠 DAY 11 (Dec 14)  - Tortuga Bay & Ferry to Isabela
+
+**Island:** Santa Cruz -> Isabela 
+**Hotel:** Puerto Ayora until ferry, then Puerto Villamil Beachfront, Isabela 
+**Duration:** All day 
+**Cost:** Variable
 
 **7:00 AM - 8:00 AM: Breakfast & Relaxation**
 
@@ -823,7 +786,7 @@ World-class snorkeling focused on marine wildlife.
 - Snorkel
 - Relax with a book!
 
-**8:00 AM - 11:00 AM: Local craft beer scene**
+**11:00 AM - 3:00 PM: Local craft beer scene**
 
 - Breweries and lunch! 
 
@@ -994,7 +957,7 @@ Unique lava tunnel formations partially submerged in the ocean. Created by lava 
 - Frigatebirds (magnificent frigatebirds)
 - Various other wading birds
 
-**10:00 AM - 12:00 PM: 🐠 CONCHA DE PERLA SNORKELING**
+**9:15 AM - 12:00 PM: 🐠 CONCHA DE PERLA SNORKELING**
 
 **Location:** 5-minute walk from your beachfront hotel  
 **Cost:** FREE (dock-adjacent, self-guided)  
@@ -1136,7 +1099,9 @@ Unique lava tunnel formations partially submerged in the ocean. Created by lava 
 
 ## ✈️ DAY 15 (Dec 18) - RETURN FLIGHT TO QUITO
 
-**Location:** Highlands Santa Cruz → Quito **Hotel:** Courtyard by Marriott Quito Airport **Duration:** Leisurely morning, afternoon flight
+**Location:** Highlands Santa Cruz → Quito 
+**Hotel:** Courtyard by Marriott Quito Airport 
+**Duration:** Leisurely morning, afternoon flight
 
 ### Timeline
 
@@ -1152,7 +1117,7 @@ Unique lava tunnel formations partially submerged in the ocean. Created by lava 
 - Early morning is the best time — tortoises are most active and light is beautiful
 - Cost: ~$5-10 entry
 
-**9:30 AM - 10:30 AM: Royal Palm Lava Tunnel
+**9:30 AM - 10:30 AM: Royal Palm Lava Tunnel**
 
 - Return to Royal Palm
 - Explore the property's private lava tunnel — one of the largest on the island
@@ -1250,22 +1215,21 @@ Unique lava tunnel formations partially submerged in the ocean. Created by lava 
 
 ## TRIP STATISTICS
 
-|Category|Details|
-|---|---|
-|**Total Duration**|16 days (Dec 4-19, 2026)|
-|**Countries Visited**|1 (Ecuador)|
-|**Major Regions**|3 (Quito, Cloud Forest, Galápagos)|
-|**Days in Quito**|3|
-|**Days in Cloud Forest**|4 (in luxury Master Suite)|
-|**Days in Galápagos**|7|
-|**Return/Travel Days**|2|
-|**Islands Visited**|4 (Santa Cruz, Bartolomé, Pinzón, Isabela)|
-|**Full-Day Tours**|3 (Bartolomé, Pinzón, Los Túneles)|
-|**Snorkeling Sessions**|5+|
-|**Hiking Activities**|5+|
-|**Special Experiences**|Waterfall hike, butterfly farm, cooking class, coffee roasting, chocolate making, hot tub in cloud forest, beachfront hotel|
-|**Flights**|4 (KC-Quito, Quito-Galápagos, Galápagos-Quito, Quito-KC)|
-|**Ferry Crossings**|2 (Baltra-Santa Cruz, Santa Cruz-Isabela, Isabela-Santa Cruz)|
+| Category                 | Details                                                                                                                     |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| **Total Duration**       | 16 days (Dec 4-19, 2026)                                                                                                    |
+| **Countries Visited**    | 1 (Ecuador)                                                                                                                 |
+| **Major Regions**        | 3 (Quito, Cloud Forest, Galápagos)                                                                                          |
+| **Days in Quito**        | 3                                                                                                                           |
+| **Days in Cloud Forest** | 4 (in luxury Master Suite)                                                                                                  |
+| **Days in Galápagos**    | 7                                                                                                                           |
+| **Return/Travel Days**   | 2                                                                                                                           |
+| **Islands Visited**      | 4 (Santa Cruz, Bartolomé, Pinzón, Isabela)                                                                                  |
+| **Full-Day Tours**       | 3 (Bartolomé, Pinzón, Los Túneles)                                                                                          |
+| **Snorkeling Sessions**  | 5+                                                                                                                          |
+| **Hiking Activities**    | 5+                                                                                                                          |
+| **Special Experiences**  | Waterfall hike, butterfly farm, cooking class, coffee roasting, chocolate making, hot tub in cloud forest, beachfront hotel |
+| **Flights**              | 4 (KC-Quito, Quito-Galápagos, Galápagos-Quito, Quito-KC)                                                                    |
 
 ---
 
@@ -1292,7 +1256,7 @@ Unique lava tunnel formations partially submerged in the ocean. Created by lava 
 
 ### Galápagos
 
-- **Giant Tortoises** (Rancho Primicias, Day 8)
+- **Giant Tortoises** (El Chato, Day 15)
 - **Bartolomé Island** - Pinnacle Rock & iconic snorkeling (Day 9)
 - **Pinzón Island** - Premium snorkeling with sharks, rays, turtles (Day 10)
 - **Concha de Perla** - Free snorkeling with playful sea lions (Day 11)
