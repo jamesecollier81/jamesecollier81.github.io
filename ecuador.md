@@ -1369,23 +1369,6 @@ Unique lava tunnel formations partially submerged in the ocean. Created by lava 
 
 ---
 
-## FINANCIAL SUMMARY (Rough Estimates)
-
-|Category|Estimated Cost|
-|---|---|
-|**Flights**|~$1,200-1,500|
-|**Hotels**|~$1,500-2,000|
-|**Galápagos Tours**|~$1,500-2,000|
-|**Cloud Forest Package**|~$900 (4-day package)|
-|**Meals (not included)**|~$800-1,000|
-|**Activities & Extras**|~$500-700|
-|**Fees (TCC, Park Entry)**|~$230|
-|**Total Estimate**|~$6,900-8,400|
-
-_Note: Per-person costs will vary based on choices. All-inclusive packages offer better value._
-
----
-
 ## 🌟 THE COMPLETE EXPERIENCE
 
 This 16-day trip gives you:
