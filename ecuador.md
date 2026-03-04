@@ -156,8 +156,9 @@ The Teleférico is one of the world's highest cable car systems, taking you to 1
 - Final lunch in Quito
 - Return to Old Town
 
-**Rest of Day: **
-- Free for whatever
+**Rest of Day:**
+
+- Free afternoon — explore Old Town at your own pace, visit any sites you missed, browse local shops, or relax at the hotel before an early start tomorrow
 
 ---
 
@@ -483,7 +484,7 @@ Visit a local coffee plantation to learn how Ecuador's famous coffee is grown an
 
 ### Timeline
 
-**6:30 AM **
+**6:30 AM**
 
 - Pickup
 - Pre-breakfast delivered the night before
@@ -514,6 +515,12 @@ Explore the private Yellow House reserve - a 200-hectare forest sanctuary.
 - Hike back to lodge
 - Freshen up
 - Light lunch at lodge restaurant
+
+**10:00 AM - 12:00 PM: Free Time & Pack**
+
+- Last chance to enjoy your Master Suite and private terrace
+- Soak in the hot tub one final time
+- Pack luggage for transfer to Quito
 
 **12:00 PM - 12:30 PM: Checkout & Depart**
 
@@ -598,176 +605,188 @@ Explore the private Yellow House reserve - a 200-hectare forest sanctuary.
 
 ---
 
-## ⭐ DAY 9 (Dec 12) - BARTOLOMÉ ISLAND FULL-DAY TOUR
+## ⭐ DAY 9 (Dec 12) - SANTA FE ISLAND FULL-DAY TOUR
 
-**Island:** Bartolomé Island  
+**Island:** Santa Fe Island  
 **Hotel:** Puerto Ayora, Santa Cruz (return for night)  
-**Duration:** 6-7 hours  
-**Cost:** $250-500 per person (depending on boat type)  
-**What to bring:** Underwater camera, towel, reef-safe sunscreen
+**Duration:** 7-8 hours  
+**Cost:** ~$320-425 per person  
+**Operator:** [Sea Lion Yacht](https://sealionyacht.com/) (operated by Finch Bay Hotel) — Thursdays only  
+**What to bring:** Underwater camera, towel, reef-safe sunscreen, hiking shoes
+
+> **⭐ WHY THIS OPERATOR:** The Sea Lion Yacht is one of only 12 vessels in the entire archipelago with a Galapagos National Park permit for day tours. It carries a max of 20 guests, has two certified bilingual naturalist guides onboard (most boats carry only one), an onboard chef serving a hot lunch, and air-conditioned interiors.
 
 ### Timeline
 
-**7:00 AM: Hotel Pickup**
+**7:45 AM: Hotel Pickup**
 
-- Guide picks you up from hotel for transfer to dock
+- Meet at San Francisco Church in Puerto Ayora
+- Transfer bus takes you across Santa Cruz Island (~45 min) to Itabaca Channel
+- Board the Sea Lion Yacht via panga (dinghy)
 
-**7:30 AM: Depart from Puerto Ayora**
+**8:40 AM: Depart for Santa Fe Island**
 
-- Boat departs from dock with your group and naturalist guide
-- Scenic sail to Bartolomé Island
+- ~2 hour sail to Santa Fe
+- Relax on the loungers on the bow deck or enjoy the air-conditioned interior
+- Seasickness pills available on request at Finch Bay Hotel (free of charge)
 
-**9:30 AM - 10:30 AM: 🏔️ PINNACLE ROCK SUMMIT HIKE**
+**10:45 AM: Arrival & Wet Landing**
 
-The most iconic view in the Galápagos - don't miss this!
+- Disembark onto the white sand beach at Barrington Bay
+- Immediate encounter with sea lion harems on the beach
 
-**Hike Details:**
+**10:45 AM - 12:30 PM: 🦎 LAND WALK — ENDEMIC WILDLIFE & GIANT CACTI**
 
-- 30-45 minute hike to summit
-- Moderate difficulty with stairs and elevation gain
-- 1,476 ft elevation to viewpoint
-- Well-maintained trail
+- Walk through one of the oldest islands in the archipelago (4 million years old)
+- Lava formations that were previously underwater are visible on the surface
 
-**What you'll experience:**
+**What you'll see on land:**
 
-- Climb to the top of Bartolomé Island
-- Panoramic 360-degree views at the summit
-- Views of Pinnacle Rock below
-- Turquoise waters and surrounding islands
-- Volcanic landscape and rock formations
-- Bring plenty of water - sun exposure at top
+- **Santa Fe Land Iguana** — endemic to this island only, distinctive mustard/yellow coloring
+- **Opuntia Cactus** — the largest prickly pear cacti in the entire Galápagos (soft thorns — you can actually hug them)
+- **Galápagos Hawks** — the largest predator in the archipelago
+- **Blue-footed Boobies & Frigatebirds**
+- **Marine Iguanas & Sea Lions** throughout
 
-**Photography:** This is the most photographed location in Galápagos - bring your camera!
+**12:30 PM - 1:30 PM: 🐠 SNORKELING — LA ENCAÑADA COVE**
 
-**10:30 AM - 12:00 PM: 🐠 SNORKELING - TURQUOISE WATERS**
+- Snorkel in the sheltered turquoise lagoon at La Encañada
+- Protected by a peninsula of small islets — calm, clear water
 
-World-class snorkeling in pristine waters.
+**What you'll see underwater:**
 
-**Snorkeling Details:**
-
-- First snorkel session
-- Pristine turquoise waters
-- One of the best snorkeling spots in the archipelago
-- Wet suits provided
-- Naturalist guide escorts the group
-
-**What you'll see:**
-
-- Galápagos Penguins (endemic, rare, only penguins north of equator!)
+- Sea Lions (playful and curious, will swim right up to you)
 - Sea Turtles (green & hawksbill)
-- Tropical Fish (sergeant major, angelfish, parrotfish, chromis)
-- Reef Sharks (whitetip reef sharks - harmless to snorkelers)
-- Rays & Stingrays
-- Sea Lions (playful underwater)
-- Colorful coral and rock formations
+- Whitetip Reef Sharks
+- Colorful reef fish (angelfish, parrotfish, damselfish)
+- Occasional Galápagos Penguins
+- Snorkeling equipment provided; wetsuit available
 
-> **🐧 Penguin Alert:** The chance of seeing Galápagos penguins here is high - they're unique to the islands and found nowhere else in the world (and this far north!).
+**1:30 PM - 2:15 PM: Return to Yacht & Relax**
 
-**12:00 PM - 1:30 PM: Lunch on Boat**
+- Board the Sea Lion Yacht
+- Snacks served by the onboard chef
 
-- Fresh seafood lunch served on board
-- Cold drinks and snacks
-- Rest and dry off
-- Relax on deck
+**2:15 PM - 3:00 PM: 🍽️ LUNCH ON BOARD**
 
-**1:30 PM - 2:30 PM: Rest & Optional Second Snorkel**
+- Hot lunch prepared by onboard chef (fresh fish, salads, rice, dessert)
+- Special dietary meals available on request
+- Enjoy views of Santa Fe from the deck
 
-- Relax on white-sand Barto Beach (rare in Galápagos!)
-- Or participate in optional second snorkel if you want more time in water
-- Enjoy the pristine beach
+**3:00 PM: Depart for Santa Cruz**
 
-**2:30 PM - 3:30 PM: Boat Return to Puerto Ayora**
+- ~2 hour sail back
 
-- Scenic sail back to Santa Cruz
-- Relax on deck
-- Spot marine life in the water
+**5:00 PM - 5:45 PM: Return to Puerto Ayora & Hotel**
 
-**4:00 PM - 5:00 PM: Return to Hotel & Rest**
-
-- Arrive back at Puerto Ayora
-- Shower and rest at hotel
-- Change clothes
-- Recover from snorkeling
+- Disembark at Itabaca Channel, transfer bus back across the island
+- Arrive at hotel approximately 5:45 PM
+- Shower, rest, recover
 
 **6:00 PM onwards: Evening & Dinner**
 
 - **Dinner at Los Kioskos** (Puerto Ayora street food scene)
 - Casual outdoor dining with grilled seafood
 - Local atmosphere, great people-watching
-- This is where locals and travelers meet for dinner
-- Budget: $15-25 per person for good meal
+- Budget: $15-25 per person
 
-> **⭐ WHY THIS DAY IS ICONIC:**  
-> Bartolomé Island offers the most famous and photographed view in Galápagos (Pinnacle Rock) combined with world-class snorkeling with penguins and sea turtles. You get the complete Galápagos experience in one day - iconic land views AND incredible marine life.
+> **⭐ WHY THIS DAY IS SPECIAL:**  
+> Santa Fe is one of the oldest and most biologically distinct islands in the Galápagos. Unlike most day trips, you get a genuinely complete experience — iconic endemic wildlife on land (the Santa Fe iguana exists nowhere else on Earth), world-class sea lion snorkeling, and the premium Sea Lion Yacht experience with a chef-prepared lunch and two naturalist guides. Thursday is the only day the Sea Lion runs this route — book well in advance.
 
 ---
 
-## ⭐ DAY 10 (Dec 13) - PINZÓN ISLAND SNORKELING 
+## ⭐ DAY 10 (Dec 13) - BARTOLOMÉ ISLAND FULL-DAY TOUR
 
-**Island:** Pinzón Island (morning/early afternoon) 
+**Island:** Bartolomé Island  
 **Hotel:** Puerto Ayora until ferry, then Puerto Villamil Beachfront, Isabela  
-**Duration:** 7-8 hours (full-day tour)
-**Cost:** $155-215 per person (tour)
-**What to bring:** Underwater camera, towel, reef-safe sunscreen, light clothing for ferry
+**Duration:** ~8 hours  
+**Cost:** $310 per person  
+**Operator:** [Yacht Santa Fe](https://yacht.santafegalapagos.com.ec/viewtour.php?id=4) — runs daily  
+**What to bring:** Underwater camera, towel, reef-safe sunscreen, hiking shoes, light bag for ferry
+
+> **⭐ WHY THIS OPERATOR:** Yacht Santa Fe is a well-regarded licensed day tour operator running out of Puerto Ayora. Their Bartolomé tour departs from Itabaca Canal (same channel as the Sea Lion), includes an onboard chef lunch, snorkeling gear, beach towel, naturalist guide, and hotel pickup — all for $310/person. This is your best luxury option for a Friday Bartolomé departure.
 
 ### Timeline
 
-**7:30 AM: Hotel Pickup**
+**7:00 AM: Hotel Pickup**
 
-- Guide picks you up from hotel for transfer to Angermeyer Pier
+- Pickup at your hotel in Puerto Ayora
+- _Note: Hotels in Punta Estrada neighborhood excluded — meeting point is at the entrance of the Catholic Church in front of the main pier_
+- 50-minute drive to Itabaca Canal
 
-**8:00 AM: Depart for Pinzón Island**
+**8:15 AM: Board the Yacht at Itabaca Canal**
 
-- Boat departs from Angermeyer Pier with your group and certified guide (English/Spanish)
-- 2-hour sailing trip to Pinzón Island
-- Scenic ocean views during transit
+- Board in groups; safety instructions given by crew
+- Security checks before departure
 
-**10:00 AM - 12:30 PM: 🦈 FIRST SNORKELING SESSION - BAHÍA PINGÜINO (PENGUIN BAY)**
+**8:40 AM: Depart for Bartolomé Island**
 
-World-class snorkeling focused on marine wildlife.
+- ~2 hour sail north to Bartolomé
+- Enjoy the ocean crossing
 
-**Why Pinzón is Special:**
+**11:00 AM: Arrival at Bartolomé**
 
-- NOT a crowded tourist spot - genuine, pristine Galápagos
-- Less visited than Bartolomé
-- Water is alive with sharks, rays, turtles, and tropical fish
-- Different ecosystem than Bartolomé
-- 95% focus on snorkeling (vs. mixed activities at other islands)
+**11:15 AM - 1:15 PM: 🏔️ PINNACLE ROCK SUMMIT HIKE**
+
+The most iconic view in the Galápagos — don't miss this!
+
+**Hike Details:**
+
+- Well-maintained wooden boardwalk trail all the way to the summit
+- Moderate difficulty with steps and elevation gain
+- Panoramic 360-degree views at the top
+
+**What you'll experience:**
+
+- The iconic Pinnacle Rock from above
+- Turquoise Sullivan Bay below
+- Views of Santiago, North Seymour, Baltra, Santa Cruz, and Rábida
+- Volcanic landscape, lava cactus, and dramatic rock formations
+- Bring plenty of water — full sun exposure at the top
+
+**Photography:** The most photographed viewpoint in all of the Galápagos — bring your Leica!
+
+**1:15 PM: Return to Yacht — Snacks**
+
+- Fresh snacks prepared by the onboard chef waiting on board
+
+**1:20 PM - 2:20 PM: 🐠 SNORKELING — BARTOLOMÉ BEACH / SULLIVAN BAY**
+
+World-class snorkeling in pristine, shallow waters.
 
 **What you'll see:**
 
-- **Sharks:** Whitetip reef sharks, blacktip sharks (harmless to snorkelers!)
-- **Sea Turtles:** Abundant - green & hawksbill turtles
-- **Tropical Fish:** Angelfish, parrotfish, damselfish, surgeon fish, chromis
-- **Rays & Stingrays:** Often gliding across sandy bottom
-- **Sea Lions:** Playful interactions underwater
-- **Sea Stars:** Various colorful species on rocks
-- **Schooling fish:** Massive schools of jacks and other pelagic fish
+- **Galápagos Penguins** — endemic, the only penguins north of the equator and found at high density here
+- Sea Turtles (green & hawksbill)
+- Tropical Fish (sergeant major, angelfish, parrotfish, chromis)
+- Whitetip Reef Sharks (harmless)
+- Rays & Stingrays
+- Playful Sea Lions
+- Snorkel gear included; wetsuit available separately
 
-**12:30 PM - 1:30 PM: Lunch on Boat**
+**2:20 PM: Return to Yacht**
 
-- Fresh lunch (often fresh-caught fish) served on board
-- Snacks and drinks included
-- Full wetsuits provided for all snorkeling
-- Change into dry clothes
+**2:30 PM - 3:00 PM: 🍽️ LUNCH ON BOARD**
 
-**1:30 PM - 2:30 PM: 🦈 SECOND SNORKELING SESSION - LA FE BAY AREA**
+- Fresh fish, salads, rice, and dessert served in the lounge, bridge, and rooftop
+- Special meals available on request
 
-- Second snorkel at a different location around Pinzón
-- More time exploring the marine ecosystem
-- Different marine life and rock formations
-- Chance to see more species
+**3:00 PM: Depart Back to Santa Cruz / Itabaca Canal**
 
-**2:30 PM - 3:00 PM: 🦅 LIGHT HIKING - LA FE BAY (Optional)**
+- ~2 hour return sail
 
-- Short walk on Santa Cruz (at La Fe Bay)
-- Observe marine iguanas and blue-footed boobies on land
-- Weather-dependent
-- Primarily snorkeling focus, so hiking is minimal (15-20 minutes)
+**5:00 PM: Disembark at Itabaca Canal**
 
-**3:00 PM onwards: Boat Return**
+- Board shuttle back to Puerto Ayora
 
-- Return to Puerto Ayora around 3:00-3:30 PM
+**5:45 PM: Arrive at Hotel**
+
+- Shower, rest, and pack for Isabela ferry
+
+**6:00 PM onwards: Evening & Dinner**
+
+- Dinner at Los Kioskos or hotel restaurant
+- Early night — tomorrow is Tortuga Bay in the morning before the ferry to Isabela
 
 ---
 
@@ -930,7 +949,8 @@ Unique lava tunnel formations partially submerged in the ocean. Created by lava 
 **Hotel:** Beachfront hotel, Puerto Villamil, Isabela  
 **Duration:** Full day (leisure pace)  
 **Activity Type:** Self-guided exploration  
-**Cost:** Minimal (supplies from local bakery/tienda)
+**Cost:** Minimal (supplies from local bakery/tienda); Ask if the hotel could pack us a lunch
+**Alternative Beach:** Playa El Garrapatero
 
 ### Timeline
 
@@ -1013,7 +1033,7 @@ Unique lava tunnel formations partially submerged in the ocean. Created by lava 
 - Early night - ferry to Santa Cruz tomorrow morning
 
 > **💡 Purpose of Day 13:**  
-> This is a "decompression day" after two intense activity days (Bartolomé, Pinzón, Los Túneles). You get to experience Isabela at your own pace, see flamingos, enjoy a beach day in front of your hotel. This rhythm - intense days mixed with leisure days - makes the trip feel more balanced and less exhausting.
+> This is a "decompression day" after two intense activity days (Santa Fe, Bartolomé, Los Túneles). You get to experience Isabela at your own pace, see flamingos, enjoy a beach day in front of your hotel. This rhythm - intense days mixed with leisure days - makes the trip feel more balanced and less exhausting.
 
 ---
 
@@ -1086,7 +1106,8 @@ Unique lava tunnel formations partially submerged in the ocean. Created by lava 
 
 **6:30 PM onwards: Celebration Dinner**
 
-- Dinner in Puerto Ayora to celebrate completing your Galápagos adventure!
+- Dinner at Royal Palm Galápagos
+	- Lava Tunnels
 - You've experienced the best the islands have to offer
 - Reflect on the incredible memories
 - Tomorrow you fly back to Quito
@@ -1224,8 +1245,8 @@ Unique lava tunnel formations partially submerged in the ocean. Created by lava 
 | **Days in Cloud Forest** | 4 (in luxury Master Suite)                                                                                                  |
 | **Days in Galápagos**    | 7                                                                                                                           |
 | **Return/Travel Days**   | 2                                                                                                                           |
-| **Islands Visited**      | 4 (Santa Cruz, Bartolomé, Pinzón, Isabela)                                                                                  |
-| **Full-Day Tours**       | 3 (Bartolomé, Pinzón, Los Túneles)                                                                                          |
+| **Islands Visited**      | 4 (Santa Cruz, Santa Fe, Bartolomé, Isabela)                                                                                |
+| **Full-Day Tours**       | 3 (Santa Fe, Bartolomé, Los Túneles)                                                                                        |
 | **Snorkeling Sessions**  | 5+                                                                                                                          |
 | **Hiking Activities**    | 5+                                                                                                                          |
 | **Special Experiences**  | Waterfall hike, butterfly farm, cooking class, coffee roasting, chocolate making, hot tub in cloud forest, beachfront hotel |
@@ -1257,8 +1278,8 @@ Unique lava tunnel formations partially submerged in the ocean. Created by lava 
 ### Galápagos
 
 - **Giant Tortoises** (El Chato, Day 15)
-- **Bartolomé Island** - Pinnacle Rock & iconic snorkeling (Day 9)
-- **Pinzón Island** - Premium snorkeling with sharks, rays, turtles (Day 10)
+- **Santa Fe Island** - Endemic land iguanas, giant cacti & sea lion snorkeling (Day 9)
+- **Bartolomé Island** - Pinnacle Rock & iconic snorkeling (Day 10)
 - **Concha de Perla** - Free snorkeling with playful sea lions (Day 11)
 - **Los Túneles** - WORLD-CLASS snorkeling through lava tunnels with seahorses (Day 12)
 - **Wetlands & Beach Picnic** - Flamingo spotting and pristine beach (Day 13)
@@ -1339,10 +1360,11 @@ Unique lava tunnel formations partially submerged in the ocean. Created by lava 
 		- Dec 17-18
 	- Quito Airport - Courtyard Marriott
 		- Dec 18 - 19
-- ☐ Bartolomé Island tour (Dec 12)
-- ☐ Pinzón Island tour (Dec 13)
+- ☐ Santa Fe Island tour / Sea Lion Yacht (Dec 12)
+- ☐ Bartolomé Island tour / Yacht Santa Fe (Dec 13)
 - ☐ Los Túneles tour (Dec 15)
 - ☐ Tintoreras Islet tour (Dec 17)
+- ☐ Lava Tunnel dinner at Royal Palm
 - ☐ Cloud Forest activities (all 4 days)
 - ☐ TCC Transit Control Card application (online: siig-cgreg.gobiernogalapagos.gob.ec)
 - ☐ Travel insurance
@@ -1369,12 +1391,10 @@ This itinerary balances adventure with comfort, activity with relaxation, and ic
 
 ---
 
-## FINAL THOUGHTS
+## Flights instead of Inter Island Ferries
 
-You're about to embark on an incredible 16-day adventure that will create memories lasting a lifetime. From the cloud-shrouded forests of Mindo to the crystal-clear waters of the Galápagos, you'll experience some of the world's most unique and biodiverse ecosystems.
+**Emetebe Airlines:** This is the most established inter-island carrier. They offer daily flights between all three main airports. Flights typically cost between $150 and $180 each way for foreigners and take about 30–45 minutes.
 
-The careful balance of activities and relaxation, combined with luxury accommodations and cultural experiences, makes this trip truly special. The Galápagos is a place like no other on Earth, and you'll understand why Charles Darwin was so captivated by these islands.
+**Fly Galapagos (ESAV):** This is the other main operator providing regular service on these routes.
 
-Pack well, stay hydrated, embrace every moment, and enjoy the adventure!
-
-**¡Bienvenido a Ecuador! (Welcome to Ecuador!)**
+**Booking Logistics:** You can book directly on their websites or through local agencies in Puerto Ayora. Note that there is a strict luggage limit, usually **20–30 lbs (9–13 kg)** per person, and they do charge for extra weight.
