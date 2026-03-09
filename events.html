@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KC Events Board</title>
+  <style>
+    :root {
+      --bg: #0f1117; --surface: #1a1d27; --surface2: #22263a;
+      --border: #2e3248; --text: #e8eaf0; --muted: #7a7f9a; --accent: #6c8ef5;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; min-height: 100vh; padding: 24px; }
+    header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 28px; flex-wrap: wrap; gap: 12px; }
+    header h1 { font-size: 1.6rem; font-weight: 700; }
+    header h1 span { color: var(--accent); }
+    .controls { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .view-toggle { display: flex; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+    .view-toggle button { background: none; border: none; color: var(--muted); padding: 7px 16px; cursor: pointer; font-size: 0.85rem; }
+    .view-toggle button.active { background: var(--accent); color: #fff; }
+    .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; align-items: center; }
+    .filter-bar > span { font-size: 0.8rem; color: var(--muted); }
+    .cat-chip { padding: 4px 12px; border-radius: 20px; font-size: 0.78rem; font-weight: 600; cursor: pointer; border: 2px solid transparent; opacity: 0.45; transition: opacity 0.15s; text-transform: uppercase; letter-spacing: 0.04em; }
+    .cat-chip.active { opacity: 1; }
+    #list-view { display: flex; flex-direction: column; gap: 10px; }
+    .event-card { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid transparent; border-radius: 12px; padding: 16px 18px; display: flex; gap: 16px; align-items: flex-start; cursor: pointer; transition: border-color 0.15s; }
+    .event-card:hover { border-color: var(--accent); }
+    .event-date-block { min-width: 56px; text-align: center; background: var(--surface2); border-radius: 8px; padding: 8px 6px; flex-shrink: 0; }
+    .event-date-block .month { font-size: 0.7rem; text-transform: uppercase; color: var(--muted); letter-spacing: 0.08em; }
+    .event-date-block .day { font-size: 1.5rem; font-weight: 700; line-height: 1; }
+    .event-date-block .end-date { font-size: 0.65rem; color: var(--muted); margin-top: 4px; }
+    .event-info { flex: 1; min-width: 0; }
+    .event-info h3 { font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+    .event-info h3 a { color: var(--text); text-decoration: none; }
+    .event-info h3 a:hover { color: var(--accent); }
+    .event-meta { display: flex; gap: 12px; font-size: 0.82rem; color: var(--muted); flex-wrap: wrap; }
+    .event-notes { font-size: 0.8rem; color: var(--muted); margin-top: 6px; font-style: italic; }
+    .cat-badge { padding: 2px 10px; border-radius: 20px; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; flex-shrink: 0; align-self: flex-start; margin-top: 2px; }
+    #calendar-view { display: none; }
+    .cal-nav { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+    .cal-nav button { background: var(--surface); border: 1px solid var(--border); color: var(--text); width: 34px; height: 34px; border-radius: 8px; cursor: pointer; font-size: 1.1rem; }
+    .cal-nav h2 { font-size: 1.1rem; font-weight: 600; }
+    .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+    .cal-dow { text-align: center; font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; padding: 4px 0 8px; }
+    .cal-day { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; min-height: 90px; padding: 6px; }
+    .cal-day.today { border-color: var(--accent); }
+    .cal-day.other-month { opacity: 0.35; }
+    .cal-day-num { font-size: 0.78rem; font-weight: 600; color: var(--muted); margin-bottom: 4px; }
+    .cal-day.today .cal-day-num { color: var(--accent); }
+    .cal-event-pill { display: block; font-size: 0.7rem; padding: 2px 6px; border-radius: 4px; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; color: #fff; font-weight: 500; }
+    #status { text-align: center; color: var(--muted); padding: 60px 20px; font-size: 0.9rem; }
+    .refresh-btn { background: none; border: 1px solid var(--border); color: var(--muted); padding: 6px 14px; border-radius: 8px; cursor: pointer; font-size: 0.82rem; }
+    .refresh-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .last-updated { font-size: 0.75rem; color: var(--muted); }
+    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 100; align-items: center; justify-content: center; }
+    .modal-overlay.open { display: flex; }
+    .modal { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px; max-width: 440px; width: 90%; }
+    .modal h2 { font-size: 1.2rem; margin-bottom: 12px; padding-right: 24px; }
+    .modal .modal-meta { color: var(--muted); font-size: 0.88rem; line-height: 1.9; }
+    .modal .modal-notes { margin-top: 12px; font-style: italic; font-size: 0.85rem; color: var(--muted); }
+    .modal .modal-link { display: inline-block; margin-top: 16px; color: var(--accent); font-size: 0.88rem; }
+    .modal-close { float: right; background: none; border: none; color: var(--muted); font-size: 1.4rem; cursor: pointer; line-height: 1; margin-top: -4px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>KC <span>Events</span></h1>
+  <div class="controls">
+    <span class="last-updated" id="last-updated"></span>
+    <button class="refresh-btn" onclick="loadData()">&#8635; Refresh</button>
+    <div class="view-toggle">
+      <button class="active" onclick="setView('list')">List</button>
+      <button onclick="setView('calendar')">Calendar</button>
+    </div>
+  </div>
+</header>
+
+<div class="filter-bar">
+  <span>Filter:</span>
+  <div id="cat-filters" style="display:flex;gap:8px;flex-wrap:wrap;"></div>
+</div>
+
+<div id="status">Loading events...</div>
+<div id="list-view"></div>
+
+<div id="calendar-view">
+  <div class="cal-nav">
+    <button onclick="prevMonth()">&#8249;</button>
+    <h2 id="cal-title"></h2>
+    <button onclick="nextMonth()">&#8250;</button>
+  </div>
+  <div class="cal-grid" id="cal-grid"></div>
+</div>
+
+<div class="modal-overlay" id="modal" onclick="closeModalOverlay(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('modal').classList.remove('open')">&#215;</button>
+    <h2 id="modal-title"></h2>
+    <div class="modal-meta" id="modal-meta"></div>
+    <div class="modal-notes" id="modal-notes"></div>
+    <a class="modal-link" id="modal-link" target="_blank"></a>
+  </div>
+</div>
+
+<script>
+const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSD9F_W6BfQpgMP_f1U-0NiCfBnew_7jVkV7U55vtR2bn7mFBccvH9g25iPJENRjWyhz6MqdYQlf5g4/pub?gid=0&single=true&output=csv';
+
+const CAT_COLORS = {
+  food:'#f59e42', arts:'#a78bfa', cycling:'#34d399', music:'#f472b6',
+  sports:'#38bdf8', community:'#fb923c', other:'#94a3b8'
+};
+
+function catColor(cat) { return CAT_COLORS[(cat||'').toLowerCase()] || CAT_COLORS.other; }
+
+let allEvents = [], activeFilters = new Set(), currentView = 'list';
+const n = new Date();
+let calYear = n.getFullYear(), calMonth = n.getMonth();
+
+async function loadData() {
+  document.getElementById('status').textContent = 'Loading...';
+  document.getElementById('status').style.display = 'block';
+  document.getElementById('list-view').innerHTML = '';
+  try {
+    const res = await fetch(CSV_URL + '&t=' + Date.now());
+    const text = await res.text();
+    allEvents = parseCSV(text);
+    document.getElementById('last-updated').textContent = 'Updated ' + new Date().toLocaleTimeString();
+    buildFilters();
+    render();
+  } catch(err) {
+    document.getElementById('status').textContent = 'Could not load data. Make sure the sheet is published as CSV.';
+  }
+}
+
+function parseCSV(text) {
+  const lines = text.trim().split('\n');
+  if (lines.length < 2) return [];
+  const headers = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g,'').toLowerCase().replace(/ /g,'_'));
+  return lines.slice(1).map(line => {
+    const cols = splitCSV(line);
+    const obj = {};
+    headers.forEach((h,i) => obj[h] = (cols[i]||'').trim().replace(/^"|"$/g,''));
+    return obj;
+  }).filter(e => e.event_name);
+}
+
+function splitCSV(line) {
+  const out = []; let cur = '', inQ = false;
+  for (let i = 0; i < line.length; i++) {
+    const c = line[i];
+    if (c === '"') inQ = !inQ;
+    else if (c === ',' && !inQ) { out.push(cur); cur = ''; }
+    else cur += c;
+  }
+  out.push(cur);
+  return out;
+}
+
+function gf(e, ...keys) { for (const k of keys) if (e[k]) return e[k]; return ''; }
+function pd(s) { if (!s) return null; const d = new Date(s + 'T00:00:00'); return isNaN(d) ? null : d; }
+function fd(d) { if (!d) return ''; return d.toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'}); }
+
+function buildFilters() {
+  const cats = [...new Set(allEvents.map(e => gf(e,'category')).filter(Boolean))];
+  activeFilters = new Set(cats);
+  const container = document.getElementById('cat-filters');
+  container.innerHTML = '';
+  cats.forEach(cat => {
+    const chip = document.createElement('span');
+    chip.className = 'cat-chip active';
+    chip.textContent = cat;
+    const c = catColor(cat);
+    chip.style.cssText = `background:${c}33;border-color:${c};color:${c}`;
+    chip.onclick = () => {
+      if (activeFilters.has(cat)) activeFilters.delete(cat);
+      else activeFilters.add(cat);
+      chip.classList.toggle('active');
+      render();
+    };
+    container.appendChild(chip);
+  });
+}
+
+function filtered() {
+  const today = new Date(); today.setHours(0,0,0,0);
+  return allEvents
+    .filter(e => { const cat = gf(e,'category'); return !cat || activeFilters.has(cat); })
+    .filter(e => { const end = pd(gf(e,'end_date')) || pd(gf(e,'start_date')); return !end || end >= today; })
+    .sort((a,b) => (pd(gf(a,'start_date'))||0) - (pd(gf(b,'start_date'))||0));
+}
+
+function render() {
+  const events = filtered();
+  const status = document.getElementById('status');
+  status.style.display = events.length ? 'none' : 'block';
+  if (!events.length) status.textContent = 'No upcoming events found.';
+  if (currentView === 'list') renderList(events);
+  else renderCalendar(events);
+}
+
+function setView(v) {
+  currentView = v;
+  document.getElementById('list-view').style.display = v === 'list' ? 'flex' : 'none';
+  document.getElementById('calendar-view').style.display = v === 'calendar' ? 'block' : 'none';
+  document.querySelectorAll('.view-toggle button').forEach((b,i) =>
+    b.classList.toggle('active', (i===0&&v==='list')||(i===1&&v==='calendar')));
+  render();
+}
+
+function renderList(events) {
+  const c = document.getElementById('list-view');
+  c.innerHTML = '';
+  events.forEach(e => {
+    const name = gf(e,'event_name'), startD = pd(gf(e,'start_date')), endD = pd(gf(e,'end_date'));
+    const time = gf(e,'time'), loc = gf(e,'location'), link = gf(e,'link');
+    const cat = gf(e,'category'), notes = gf(e,'notes'), color = catColor(cat);
+    const card = document.createElement('div');
+    card.className = 'event-card';
+    card.style.borderLeftColor = color;
+    const monthStr = startD ? startD.toLocaleDateString('en-US',{month:'short'}) : '';
+    const dayStr = startD ? startD.getDate() : '?';
+    const endStr = endD && startD && endD.getTime() !== startD.getTime()
+      ? '\u2192 ' + endD.toLocaleDateString('en-US',{month:'short',day:'numeric'}) : '';
+    card.innerHTML = `
+      <div class="event-date-block">
+        <div class="month">${monthStr}</div>
+        <div class="day">${dayStr}</div>
+        ${endStr ? `<div class="end-date">${endStr}</div>` : ''}
+      </div>
+      <div class="event-info">
+        <h3>${link ? `<a href="${link}" target="_blank" onclick="event.stopPropagation()">${name}</a>` : name}</h3>
+        <div class="event-meta">
+          ${time ? `<span>&#128336; ${time}</span>` : ''}
+          ${loc  ? `<span>&#128205; ${loc}</span>`  : ''}
+        </div>
+        ${notes ? `<div class="event-notes">${notes}</div>` : ''}
+      </div>
+      ${cat ? `<span class="cat-badge" style="background:${color}22;color:${color};border:1px solid ${color}55">${cat}</span>` : ''}
+    `;
+    card.addEventListener('click', () => openModal(e));
+    c.appendChild(card);
+  });
+}
+
+function prevMonth() { calMonth--; if(calMonth<0){calMonth=11;calYear--;} render(); }
+function nextMonth() { calMonth++; if(calMonth>11){calMonth=0;calYear++;} render(); }
+
+function renderCalendar(events) {
+  document.getElementById('cal-title').textContent =
+    new Date(calYear, calMonth, 1).toLocaleDateString('en-US',{month:'long',year:'numeric'});
+  const grid = document.getElementById('cal-grid');
+  grid.innerHTML = '';
+  ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].forEach(d => {
+    const el = document.createElement('div'); el.className = 'cal-dow'; el.textContent = d; grid.appendChild(el);
+  });
+  const firstDay = new Date(calYear, calMonth, 1).getDay();
+  const daysInMon = new Date(calYear, calMonth+1, 0).getDate();
+  const today = new Date(); today.setHours(0,0,0,0);
+  const cells = [];
+  for (let i = 0; i < firstDay; i++) cells.push({date: new Date(calYear, calMonth, -(firstDay-i-1)), other: true});
+  for (let d = 1; d <= daysInMon; d++) cells.push({date: new Date(calYear, calMonth, d), other: false});
+  while (cells.length % 7 !== 0) cells.push({date: new Date(calYear, calMonth+1, cells.length-(firstDay+daysInMon)+1), other: true});
+  cells.forEach(cell => {
+    const el = document.createElement('div');
+    el.className = 'cal-day' + (cell.other?' other-month':'') + (cell.date.getTime()===today.getTime()?' today':'');
+    el.innerHTML = `<div class="cal-day-num">${cell.date.getDate()}</div>`;
+    events.forEach(e => {
+      const start = pd(gf(e,'start_date')), end = pd(gf(e,'end_date')) || start;
+      if (!start) return;
+      const cellD = new Date(cell.date); cellD.setHours(0,0,0,0);
+      const s = new Date(start); s.setHours(0,0,0,0);
+      const en = new Date(end); en.setHours(0,0,0,0);
+      if (cellD < s || cellD > en) return;
+      const pill = document.createElement('span');
+      pill.className = 'cal-event-pill';
+      pill.style.background = catColor(gf(e,'category'));
+      pill.textContent = gf(e,'event_name');
+      pill.onclick = (ev) => { ev.stopPropagation(); openModal(e); };
+      el.appendChild(pill);
+    });
+    grid.appendChild(el);
+  });
+}
+
+function openModal(e) {
+  const startD = pd(gf(e,'start_date')), endD = pd(gf(e,'end_date')), link = gf(e,'link');
+  document.getElementById('modal-title').textContent = gf(e,'event_name');
+  let meta = '';
+  if (startD) { meta += `&#128197; ${fd(startD)}`; if (endD && endD.getTime()!==startD.getTime()) meta += ` \u2192 ${fd(endD)}`; meta += '<br>'; }
+  if (gf(e,'time'))     meta += `&#128336; ${gf(e,'time')}<br>`;
+  if (gf(e,'location')) meta += `&#128205; ${gf(e,'location')}<br>`;
+  if (gf(e,'category')) meta += `&#127991; ${gf(e,'category')}`;
+  document.getElementById('modal-meta').innerHTML = meta;
+  document.getElementById('modal-notes').textContent = gf(e,'notes');
+  const linkEl = document.getElementById('modal-link');
+  if (link) { linkEl.href = link; linkEl.textContent = '&#128279; More info \u2192'; linkEl.style.display='inline'; }
+  else linkEl.style.display = 'none';
+  document.getElementById('modal').classList.add('open');
+}
+
+function closeModalOverlay(e) {
+  if (e.target.id === 'modal') document.getElementById('modal').classList.remove('open');
+}
+
+setView('list');
+loadData();
+setInterval(loadData, 5 * 60 * 1000);
+</script>
+</body>
+</html>
