@@ -551,7 +551,13 @@ function categorize(events) {
     }
   });
 
-  return { onNow, thisMonth, nextMonth, later };
+  const byDate = (a, b) => pd(gf(a,'start_date')) - pd(gf(b,'start_date'));
+  return {
+    onNow:     onNow.sort(byDate),
+    thisMonth: thisMonth.sort(byDate),
+    nextMonth: nextMonth.sort(byDate),
+    later:     later.sort(byDate),
+  };
 }
 
 function countdownLabel(e) {
