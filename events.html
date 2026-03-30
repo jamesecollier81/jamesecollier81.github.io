@@ -498,19 +498,49 @@ function buildFilters() {
   activeFilters = new Set(cats);
   const container = document.getElementById('cat-filters');
   container.innerHTML = '';
+
+  // "all" chip
+  const allChip = document.createElement('span');
+  allChip.className = 'cat-chip active';
+  allChip.id = 'chip-all';
+  allChip.textContent = 'all';
+  allChip.style.cssText = `background:#ffffff18;border-color:#ffffff44;color:var(--text)`;
+  allChip.onclick = () => {
+    activeFilters = new Set(cats);
+    syncChips();
+    render();
+  };
+  container.appendChild(allChip);
+
   cats.forEach(cat => {
     const chip = document.createElement('span');
     chip.className = 'cat-chip active';
+    chip.dataset.cat = cat;
     chip.textContent = cat;
     const c = catColor(cat);
     chip.style.cssText = `background:${c}22;border-color:${c};color:${c}`;
     chip.onclick = () => {
-      if (activeFilters.has(cat)) activeFilters.delete(cat);
-      else activeFilters.add(cat);
-      chip.classList.toggle('active');
+      const isIsolated = activeFilters.size === 1 && activeFilters.has(cat);
+      if (isIsolated) {
+        // already isolated — clicking again restores all
+        activeFilters = new Set(cats);
+      } else {
+        // isolate this category
+        activeFilters = new Set([cat]);
+      }
+      syncChips();
       render();
     };
     container.appendChild(chip);
+  });
+}
+
+function syncChips() {
+  const cats = [...document.querySelectorAll('[data-cat]')].map(el => el.dataset.cat);
+  const allActive = activeFilters.size === cats.length;
+  document.getElementById('chip-all').classList.toggle('active', allActive);
+  document.querySelectorAll('[data-cat]').forEach(chip => {
+    chip.classList.toggle('active', activeFilters.has(chip.dataset.cat));
   });
 }
 
