@@ -570,7 +570,7 @@ function categorize(events) {
 
     // On Now: multi-day event already started and hasn't ended
     const isMultiDay = end && end.getTime() !== start.getTime();
-    if (isMultiDay && startD <= today && endD >= today) {
+    if (startD <= today && endD >= today) {
       onNow.push(e);
     } else if (startD >= thisMonthStart && startD <= thisMonthEnd) {
       thisMonth.push(e);
