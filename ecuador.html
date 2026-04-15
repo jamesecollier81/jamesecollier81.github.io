@@ -166,6 +166,51 @@
     .hotel-card .hnights { font-size: 0.8rem; color: #888; margin: 0.1rem 0 0.25rem; }
     .hotel-card .hname { color: #222; }
 
+    /* ── Fees section ── */
+    h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin: 1.75rem 0 0.6rem;
+      color: #333;
+    }
+
+    .fees-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    .fees-table thead tr { background: #5a5a5a; color: #fff; }
+    .fees-table thead th {
+      padding: 0.6rem 0.9rem;
+      text-align: left;
+      font-weight: 600;
+    }
+    .fees-table tbody tr { border-bottom: 1px solid #eee; }
+    .fees-table tbody tr:last-child { border-bottom: none; }
+    .fees-table td { padding: 0.6rem 0.9rem; vertical-align: top; }
+    .fees-table td:first-child { font-weight: 600; white-space: nowrap; }
+    .fees-table td:nth-child(2) { white-space: nowrap; }
+
+    .cash-summary-table thead tr { background: #2c5f2e; }
+    .cash-summary-table td:last-child { text-align: right; }
+    .cash-summary-table tr:last-child td { font-weight: 700; }
+
+    .warning {
+      background: #fffbea;
+      border-left: 4px solid #e6a817;
+      border-radius: 6px;
+      padding: 0.65rem 1rem;
+      font-size: 0.85rem;
+      color: #555;
+      margin: 0.65rem 0;
+      line-height: 1.5;
+    }
+
     /* ── Responsive breakpoint ── */
     @media (max-width: 700px) {
       body { padding: 1rem; }
@@ -305,7 +350,7 @@
           <td class="dow">Wednesday</td>
           <td>Isabela – Los Túneles</td>
           <td>Los Túneles world-class snorkeling (lava tunnels, seahorses, sharks, turtles) · lava platform walking</td>
-          <td class="transport">🚤 Pahoehoe Galápagos · $164/pp · max 10 · lunch incl.</td>
+          <td class="transport">🚤 Agora · $164/pp · max 10 · lunch incl.</td>
         </tr>
         <tr class="phase-isabela">
           <td class="day-num">14</td>
@@ -313,7 +358,7 @@
           <td class="dow">Thursday</td>
           <td>Isabela → Santa Cruz</td>
           <td>Tintoreras Islet tour (penguins, blue-footed boobies, marine iguanas, sea lions, reef sharks, sea turtles) · Ferry back to Santa Cruz · Check in to Royal Palm · Celebration dinner</td>
-          <td class="transport">🚤 Pahoehoe Galápagos · $68/pp · max 16 + ⛴️ Ferry (2 hrs)</td>
+          <td class="transport">🚤 Agora · $68/pp · max 16 + ⛴️ Ferry (2 hrs)</td>
         </tr>
         <tr class="phase-santacruz">
           <td class="day-num">15</td>
@@ -489,7 +534,7 @@
         <div class="card-body">
           <div class="card-location">Isabela – Los Túneles</div>
           <div class="card-activity">Los Túneles world-class snorkeling (lava tunnels, seahorses, sharks, turtles) · lava platform walking</div>
-          <div class="card-transport">🚤 Pahoehoe Galápagos · $164/pp · max 10 · lunch incl.</div>
+          <div class="card-transport">🚤 Agora · $164/pp · max 10 · lunch incl.</div>
         </div>
       </div>
 
@@ -501,7 +546,7 @@
         <div class="card-body">
           <div class="card-location">Isabela → Santa Cruz</div>
           <div class="card-activity">Tintoreras Islet tour (penguins, blue-footed boobies, marine iguanas, sea lions, reef sharks, sea turtles) · Ferry back to Santa Cruz · Check in to Royal Palm · Celebration dinner</div>
-          <div class="card-transport">🚤 Pahoehoe Galápagos · $68/pp · max 16 + ⛴️ Ferry (2 hrs)</div>
+          <div class="card-transport">🚤 Agora · $68/pp · max 16 + ⛴️ Ferry (2 hrs)</div>
         </div>
       </div>
 
@@ -564,6 +609,123 @@
       <div class="hotel-card"><div class="hphase">Santa Cruz highlands</div><div class="hnights">Dec 17–18</div><div class="hname">Royal Palm Galápagos</div></div>
       <div class="hotel-card"><div class="hphase">Return Quito</div><div class="hnights">Dec 18–19</div><div class="hname">Courtyard by Marriott Quito Airport</div></div>
     </div>
+
+    <!-- ══ GALÁPAGOS FEES ══ -->
+    <h2>Galápagos Fees &amp; Entry Requirements</h2>
+
+    <h3>Before You Leave Home</h3>
+    <table class="fees-table">
+      <thead>
+        <tr><th>Item</th><th>Cost</th><th>How to Pay</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Passport validity</td>
+          <td>—</td>
+          <td>Check now</td>
+          <td>Must be valid 6+ months past Dec 19</td>
+        </tr>
+        <tr>
+          <td>Travel insurance</td>
+          <td>Varies</td>
+          <td>Buy at home</td>
+          <td>Legally required in Galápagos; air evacuation costs $15–20k without it</td>
+        </tr>
+        <tr>
+          <td>TCT (Transit Control Card)</td>
+          <td>$20/person</td>
+          <td>Online — card</td>
+          <td>siig-registro.gobiernogalapagos.gob.ec — complete within 48 hrs of Galápagos flight; have hotel names and flight info ready</td>
+        </tr>
+        <tr>
+          <td>Biosecurity Declaration (DJM)</td>
+          <td>Free</td>
+          <td>Online</td>
+          <td>declaracion.abgalapagos.gob.ec — within 72 hrs of Galápagos flight; save QR code to phone</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>At Quito Airport (before boarding Galápagos flight)</h3>
+    <table class="fees-table">
+      <thead>
+        <tr><th>Item</th><th>Cost</th><th>How to Pay</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>TCT card pickup</td>
+          <td>Already paid</td>
+          <td>Counter</td>
+          <td>Even if done online, must collect physical card at CGREG counter</td>
+        </tr>
+        <tr>
+          <td>SICGAL luggage inspection</td>
+          <td>Free</td>
+          <td>Mandatory</td>
+          <td>Physical bag check before check-in — no prohibited foods, plants, or seeds</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>At Baltra on Arrival</h3>
+    <table class="fees-table">
+      <thead>
+        <tr><th>Item</th><th>Cost</th><th>How to Pay</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>National Park entrance fee</td>
+          <td>$200/person</td>
+          <td><strong>Cash only</strong></td>
+          <td>Crisp, undamaged USD bills — no ATM at airport; keep receipt, boat captains need to record it</td>
+        </tr>
+        <tr>
+          <td>Biosecurity dog/luggage scan</td>
+          <td>Free</td>
+          <td>Mandatory</td>
+          <td>Do not cross the painted line until cleared</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>On Isabela (cash only)</h3>
+    <table class="fees-table">
+      <thead>
+        <tr><th>Item</th><th>Cost</th><th>How to Pay</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Isabela island entry fee</td>
+          <td>$10/person</td>
+          <td>Cash at dock</td>
+          <td>Paid on arrival at Puerto Villamil</td>
+        </tr>
+        <tr>
+          <td>Inter-island baggage inspections</td>
+          <td>Free</td>
+          <td>Mandatory</td>
+          <td>Bags inspected when moving between islands — no organic material</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Cash Summary</h3>
+    <table class="fees-table cash-summary-table">
+      <thead>
+        <tr><th>Item</th><th>Total (2 people)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>National Park fee</td><td>$400</td></tr>
+        <tr><td>Isabela entry fee</td><td>$20</td></tr>
+        <tr><td>TCT</td><td>$40 (paid online)</td></tr>
+        <tr><td>Isabela spending (meals, tours, tips, taxis, 3 nights)</td><td>~$600–650</td></tr>
+        <tr><td>Recommended cash into Galápagos</td><td>~$1,000–1,100</td></tr>
+      </tbody>
+    </table>
+
+    <div class="warning">⚠️ Keep the $400 park fee in a separate envelope of crisp, undamaged bills. Set it aside before you leave home and don't touch it. Park rangers reject worn or torn currency.</div>
+    <div class="warning">⚠️ Isabela has no reliable ATM. There is one pair of Banco del Pacífico ATMs on the main plaza but they are frequently out of service. Bring all cash you'll need for Isabela from Santa Cruz or Quito.</div>
+    <div class="warning">⚠️ The biosecurity declaration (DJM) is now fully digital as of January 31, 2026 — there is no paper form on the plane. Complete it online before you fly to the Galápagos or you may be delayed at the airport.</div>
 
   </div>
 </body>
