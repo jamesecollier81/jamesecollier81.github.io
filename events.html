@@ -422,8 +422,19 @@
 const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSD9F_W6BfQpgMP_f1U-0NiCfBnew_7jVkV7U55vtR2bn7mFBccvH9g25iPJENRjWyhz6MqdYQlf5g4/pub?gid=0&single=true&output=csv';
 
 const CAT_COLORS = {
-  food:'#f59e42', arts:'#a78bfa', cycling:'#34d399', music:'#f472b6',
-  sports:'#38bdf8', community:'#fb923c', museum:'#e8c06a', events:'#7b9cff', other:'#94a3b8'
+  'museum':       '#e8c06a',
+  "farmer's mkt": '#84cc16',
+  'pop up':       '#f472b6',
+  'mlb':          '#e05252',
+  'events':       '#7b9cff',
+  'festival':     '#fb923c',
+  'food':         '#f59e42',
+  'flea mkt':     '#a3e635',
+  'music':        '#c084fc',
+  'futbol':       '#34d399',
+  'opera':        '#818cf8',
+  'concert':      '#f43f5e',
+  'other': '#94a3b8'
 };
 
 function catColor(cat) { return CAT_COLORS[(cat||'').toLowerCase()] || CAT_COLORS.other; }
