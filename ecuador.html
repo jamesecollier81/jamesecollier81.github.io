@@ -211,6 +211,37 @@
       line-height: 1.5;
     }
 
+    .tip-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 0.65rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .tip-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      padding: 0.75rem 1rem;
+      font-size: 0.85rem;
+      line-height: 1.5;
+      border-left: 4px solid #2c5f2e;
+    }
+
+    .tip-card-full {
+      display: block;
+      margin-bottom: 0.65rem;
+    }
+
+    .tip-label {
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 0.3rem;
+      font-size: 0.88rem;
+    }
+
+    .tip-body { color: #444; }
+
     /* ── Responsive breakpoint ── */
     @media (max-width: 700px) {
       body { padding: 1rem; }
@@ -726,6 +757,68 @@
     <div class="warning">⚠️ Keep the $400 park fee in a separate envelope of crisp, undamaged bills. Set it aside before you leave home and don't touch it. Park rangers reject worn or torn currency.</div>
     <div class="warning">⚠️ Isabela has no reliable ATM. There is one pair of Banco del Pacífico ATMs on the main plaza but they are frequently out of service. Bring all cash you'll need for Isabela from Santa Cruz or Quito.</div>
     <div class="warning">⚠️ The biosecurity declaration (DJM) is now fully digital as of January 31, 2026 — there is no paper form on the plane. Complete it online before you fly to the Galápagos or you may be delayed at the airport.</div>
+
+    <h2>Good to Know</h2>
+
+    <h3>📋 Before You Go — Book These Early</h3>
+    <div class="tip-grid">
+      <div class="tip-card">
+        <div class="tip-label">Sea Lion Yacht — Bartolomé</div>
+        <div class="tip-body">Dec 12 (Saturday). Operated by Finch Bay Hotel. One of only 12 vessels with a Galápagos National Park day-tour permit. Max 20 guests, 2 naturalist guides, onboard chef. Book well in advance.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-label">Sea Lion Yacht — North Seymour</div>
+        <div class="tip-body">Dec 14 (Monday). Same operator and vessel as Bartolomé. Book at the same time.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-label">Agora — Los Túneles</div>
+        <div class="tip-body">Dec 16 (Wednesday). $164/pp · max 10 guests · lunch included. Best snorkeling in the archipelago — small boat, fills fast.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-label">Agora — Tintoreras</div>
+        <div class="tip-body">Dec 17 (Thursday morning). $68/pp · max 16 guests. Book together with Los Túneles.</div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-label">Yellow House Birding Reserve</div>
+        <div class="tip-body">Dec 10 early morning, Mindo. $95 for two · 3.5 hrs with guide. Private 200-hectare reserve — book directly with the lodge.</div>
+      </div>
+    </div>
+
+    <h3>✈️ Quito Airport — Galápagos Flight Day</h3>
+    <div class="warning">⚠️ Arrive at the airport at least 2 hours before your Galápagos flight. You must visit the CGREG counter (TCT validation) AND the SICGAL luggage inspection booth before you can check in. Both queues take time.</div>
+    <div class="tip-card tip-card-full">
+      <div class="tip-body">Have ready: digital TCT on your phone (or printout), passport, and round-trip Galápagos ticket. After TCT validation, go to SICGAL for the physical bag inspection — no prohibited foods, plants, or seeds. Only then can you check in.</div>
+    </div>
+
+    <h3>⛴️ Inter-Island Ferries</h3>
+    <div class="tip-card tip-card-full">
+      <div class="tip-body">Both crossings (Santa Cruz → Isabela on Dec 15, Isabela → Santa Cruz on Dec 17) take about 2 hours and can be rough. Sit on the center or lower deck, bring a light jacket, and have snacks and water. Take any motion sickness medication before boarding, not after it gets rough.</div>
+    </div>
+    <div class="warning">⚠️ Bags are inspected every time you move between islands (biosecurity). Remove any organic material — fruit, plants, seeds — before each crossing or you'll be asked to dispose of it at the dock.</div>
+
+    <h3>🏖️ Tortuga Bay (Dec 13)</h3>
+    <div class="tip-card tip-card-full">
+      <div class="tip-body">Sign in at the National Park booth at the trailhead — required, takes 2 minutes. The popular approach: walk one way (1.5 miles, 45 min, paved and flat through cactus forest) and take the water taxi back (~$10/pp, ~20 min). Water taxi departs Puerto Ayora at 9 AM &amp; 2 PM; pickups from Tortuga Bay at 2 PM &amp; 5 PM — buy tickets at the kiosk by the pier.</div>
+    </div>
+    <div class="warning">⚠️ There are zero facilities or vendors at the beach. Bring all water and food you'll need — the equatorial heat and the walk will drain you faster than you expect.</div>
+    <div class="tip-card tip-card-full">
+      <div class="tip-body">The long beach (Playa Brava) is for wildlife only — don't swim there. Walk to the far end through the mangroves to reach Playa Mansa, the calm lagoon where you can snorkel. Sea turtles and rays are common.</div>
+    </div>
+
+    <h3>🌿 Quito Teleférico</h3>
+    <div class="tip-card tip-card-full">
+      <div class="tip-body">Go in the morning — skies are typically clear early and cloud up in the afternoon. The cable car rises from 9,350 ft to 13,000 ft; bring a jacket even if it's warm below. The ride takes about 10 minutes each way.</div>
+    </div>
+
+    <h3>🤿 Snorkeling Gear</h3>
+    <div class="tip-card tip-card-full">
+      <div class="tip-body"><strong>Reef-safe sunscreen only</strong> — regular sunscreen is prohibited in Galápagos waters and will be confiscated. Apply before you leave the hotel, not at the beach. A rash guard is better than sunscreen for long snorkel sessions anyway. Bring an underwater camera or GoPro — you'll want it at every site.</div>
+    </div>
+
+    <h3>🌡️ Weather — December</h3>
+    <div class="tip-card tip-card-full">
+      <div class="tip-body">December is the start of the warm/wet season in the Galápagos. Expect warm, sunny days (75–85°F) with occasional brief showers. Water temperature is warm (~72°F) — a shorty wetsuit is optional but comfortable for long snorkel sessions. In Quito (9,350 ft elevation) it's cooler — 55–65°F, bring a light jacket. Mindo cloud forest is warm and humid — 65–75°F with frequent mist.</div>
+    </div>
 
   </div>
 </body>
