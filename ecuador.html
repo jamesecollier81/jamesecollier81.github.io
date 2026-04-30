@@ -3,730 +3,524 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ecuador 2026 — Day by Day Overview</title>
+  <title>Ecuador 2026 — Trip Checklist</title>
   <style>
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f5f5f0;
-      color: #222;
-      margin: 0;
-      padding: 1.5rem;
-    }
-
-    .container {
-      max-width: 1100px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #111;
+      background: #fff;
+      padding: 2rem 1.75rem;
+      max-width: 800px;
       margin: 0 auto;
     }
 
     h1 {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-weight: 700;
+      border-bottom: 3px solid #111;
+      padding-bottom: 0.4rem;
       margin-bottom: 0.25rem;
-      color: #1a1a1a;
     }
 
     .subtitle {
-      font-size: 0.95rem;
-      color: #666;
-      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 2rem;
+      font-style: italic;
     }
 
     h2 {
-      font-size: 1.05rem;
-      font-weight: 600;
-      margin: 2.5rem 0 0.75rem;
-      color: #1a1a1a;
-    }
-
-    /* ── Legend ── */
-    .legend {
-      display: flex;
-      gap: 1.25rem;
-      flex-wrap: wrap;
-      margin-bottom: 1.25rem;
-      font-size: 0.82rem;
-      color: #555;
-    }
-    .legend-item { display: flex; align-items: center; gap: 0.4rem; }
-    .legend-swatch { width: 13px; height: 13px; border-radius: 2px; }
-    .sw-quito     { background: #c0392b; }
-    .sw-cloud     { background: #27ae60; }
-    .sw-isabela   { background: #2980b9; }
-    .sw-santacruz { background: #8e44ad; }
-
-    /* ── Desktop table ── */
-    .desktop-table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-      font-size: 0.88rem;
-    }
-    .desktop-table thead tr { background: #2c5f2e; color: #fff; }
-    .desktop-table thead th {
-      padding: 0.75rem 1rem;
-      text-align: left;
-      font-weight: 600;
-      white-space: nowrap;
-    }
-    .desktop-table tbody tr { border-bottom: 1px solid #eee; }
-    .desktop-table tbody tr:last-child { border-bottom: none; }
-    .desktop-table tbody tr:hover { background: #f9f9f6; }
-    .desktop-table td { padding: 0.7rem 1rem; vertical-align: top; }
-    .day-num { font-weight: 700; color: #2c5f2e; text-align: center; }
-    .date    { white-space: nowrap; font-weight: 600; }
-    .dow     { color: #666; white-space: nowrap; }
-    .transport { color: #444; }
-    .phase-quito     { border-left: 4px solid #c0392b; }
-    .phase-cloud     { border-left: 4px solid #27ae60; }
-    .phase-isabela   { border-left: 4px solid #2980b9; }
-    .phase-santacruz { border-left: 4px solid #8e44ad; }
-
-    /* Hotels table */
-    .hotels-table thead tr { background: #4a4a4a; }
-
-    /* ── Mobile cards ── */
-    .cards { display: none; }
-
-    .card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-      margin-bottom: 0.85rem;
-      overflow: hidden;
-    }
-
-    .card-header {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 0.65rem 1rem;
-      color: #fff;
-      font-size: 0.82rem;
-    }
-    .card-header.phase-quito     { background: #c0392b; }
-    .card-header.phase-cloud     { background: #27ae60; }
-    .card-header.phase-isabela   { background: #2980b9; }
-    .card-header.phase-santacruz { background: #8e44ad; }
-
-    .card-day {
-      font-size: 1.2rem;
-      font-weight: 800;
-      line-height: 1;
-      opacity: 0.9;
-    }
-    .card-dateline {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.3;
-    }
-    .card-dateline .cdate { font-weight: 700; font-size: 0.95rem; }
-    .card-dateline .cdow  { opacity: 0.85; font-size: 0.78rem; }
-
-    .card-body {
-      padding: 0.75rem 1rem;
-      font-size: 0.88rem;
-      line-height: 1.5;
-    }
-    .card-location {
-      font-weight: 600;
-      color: #444;
-      margin-bottom: 0.3rem;
-      font-size: 0.82rem;
+      font-size: 1.1rem;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.03em;
-    }
-    .card-activity {
-      color: #222;
-      margin-bottom: 0.5rem;
-    }
-    .card-transport {
-      font-size: 0.82rem;
-      color: #555;
-      border-top: 1px solid #f0f0f0;
-      padding-top: 0.45rem;
-      margin-top: 0.45rem;
+      letter-spacing: 0.07em;
+      margin: 2rem 0 0.75rem;
+      border-bottom: 1.5px solid #111;
+      padding-bottom: 0.3rem;
     }
 
-    /* Hotels mobile */
-    .hotels-cards { display: none; }
-    .hotel-card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-      padding: 0.75rem 1rem;
-      margin-bottom: 0.65rem;
-      font-size: 0.88rem;
-    }
-    .hotel-card .hphase { font-weight: 700; color: #333; }
-    .hotel-card .hnights { font-size: 0.8rem; color: #888; margin: 0.1rem 0 0.25rem; }
-    .hotel-card .hname { color: #222; }
-
-    /* ── Fees section ── */
     h3 {
       font-size: 0.95rem;
-      font-weight: 600;
-      margin: 1.75rem 0 0.6rem;
+      font-weight: 700;
+      margin: 1.25rem 0 0.5rem;
       color: #333;
     }
 
-    .fees-table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-      font-size: 0.85rem;
-      margin-bottom: 0.5rem;
+    ul {
+      list-style: none;
+      padding: 0;
     }
-    .fees-table thead tr { background: #5a5a5a; color: #fff; }
-    .fees-table thead th {
-      padding: 0.6rem 0.9rem;
-      text-align: left;
-      font-weight: 600;
-    }
-    .fees-table tbody tr { border-bottom: 1px solid #eee; }
-    .fees-table tbody tr:last-child { border-bottom: none; }
-    .fees-table td { padding: 0.6rem 0.9rem; vertical-align: top; }
-    .fees-table td:first-child { font-weight: 600; white-space: nowrap; }
-    .fees-table td:nth-child(2) { white-space: nowrap; }
 
-    .cash-summary-table thead tr { background: #2c5f2e; }
-    .cash-summary-table td:last-child { text-align: right; }
-    .cash-summary-table tr:last-child td { font-weight: 700; }
-
-    .warning {
-      background: #fffbea;
-      border-left: 4px solid #e6a817;
-      border-radius: 6px;
-      padding: 0.65rem 1rem;
-      font-size: 0.85rem;
-      color: #555;
-      margin: 0.65rem 0;
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      margin-bottom: 0.55rem;
+      font-size: 0.95rem;
       line-height: 1.5;
     }
 
-    /* ── Responsive breakpoint ── */
-    @media (max-width: 700px) {
-      body { padding: 1rem; }
-      h1 { font-size: 1.3rem; }
-      .desktop-table { display: none; }
-      .hotels-table-wrap { display: none; }
-      .cards { display: block; }
-      .hotels-cards { display: block; }
+    /* Base checkbox */
+    .cb {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      border: 2px solid #333;
+      border-radius: 2px;
+      margin-top: 2px;
+    }
+
+    /* Money checkbox — larger, bold border */
+    .cb-money {
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      border: 3px solid #111;
+      border-radius: 2px;
+      margin-top: 1px;
+    }
+
+    /* Money item row styling */
+    .money-item {
+      background: #f5f5f5;
+      border-left: 4px solid #111;
+      padding: 0.45rem 0.65rem;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 0.55rem;
+      font-weight: 600;
+    }
+
+    .money-item .amount {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .money-item .note {
+      font-weight: 400;
+      font-size: 0.85rem;
+      color: #444;
+      display: block;
+      margin-top: 0.1rem;
+    }
+
+    /* Step boxes for the Shuffle */
+    .step {
+      border: 1.5px solid #333;
+      border-radius: 4px;
+      padding: 0.6rem 0.75rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .step-num {
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #555;
+      margin-bottom: 0.2rem;
+    }
+
+    .step-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .step-detail {
+      font-size: 0.88rem;
+      color: #333;
+      margin-top: 0.2rem;
+    }
+
+    .step-warn {
+      font-weight: 700;
+      font-size: 0.88rem;
+      margin-top: 0.3rem;
+    }
+
+    /* Warning box */
+    .warn-box {
+      border: 2px solid #111;
+      border-radius: 4px;
+      padding: 0.65rem 0.85rem;
+      margin: 0.75rem 0;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .warn-box strong { font-size: 0.95rem; }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin: 0.75rem 0;
+    }
+
+    thead tr {
+      background: #111;
+      color: #fff;
+    }
+
+    thead th {
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    tbody tr { border-bottom: 1px solid #ccc; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody td { padding: 0.5rem 0.75rem; vertical-align: top; }
+    tbody tr:nth-child(even) { background: #f9f9f9; }
+
+    .total-row td { font-weight: 700; border-top: 2px solid #111; }
+
+    /* Cash summary block */
+    .cash-block {
+      border: 2.5px solid #111;
+      border-radius: 6px;
+      overflow: hidden;
+      margin: 0.75rem 0;
+    }
+
+    .cash-block-header {
+      background: #111;
+      color: #fff;
+      padding: 0.4rem 0.75rem;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+    }
+
+    .cash-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid #ddd;
+      font-size: 0.9rem;
+      gap: 1rem;
+    }
+
+    .cash-row:last-child { border-bottom: none; }
+
+    .cash-row.total-cash {
+      font-weight: 700;
+      font-size: 1rem;
+      background: #f0f0f0;
+      border-top: 2px solid #111;
+    }
+
+    .cash-row .cash-label { flex: 1; }
+    .cash-row .cash-amt { white-space: nowrap; font-weight: 600; }
+    .cash-row .cash-note { font-size: 0.78rem; color: #555; font-weight: 400; display: block; }
+
+    .confirm-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    @media print {
+      body { padding: 1rem; font-size: 13px; }
+      h2 { page-break-before: auto; }
+      .step, .warn-box, .cash-block { break-inside: avoid; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
 
-    <h1>Ecuador 2026 — Day by Day Overview</h1>
-    <div class="subtitle">December 5–20, 2026 &nbsp;·&nbsp; 16 Days</div>
+  <h1>Ecuador 2026 — Trip Checklist</h1>
+  <div class="subtitle">December 5–20, 2026 &nbsp;·&nbsp; James &amp; Partner</div>
 
-    <div class="legend">
-      <div class="legend-item"><div class="legend-swatch sw-quito"></div> Quito</div>
-      <div class="legend-item"><div class="legend-swatch sw-cloud"></div> Cloud Forest</div>
-      <div class="legend-item"><div class="legend-swatch sw-isabela"></div> Galápagos – Isabela</div>
-      <div class="legend-item"><div class="legend-swatch sw-santacruz"></div> Galápagos – Santa Cruz</div>
+  <!-- ══ BEFORE YOU LEAVE HOME ══ -->
+  <h2>Before You Leave Home</h2>
+
+  <h3>Documents</h3>
+  <ul>
+    <li><span class="cb"></span> Passport — valid 6+ months past Dec 20, 2026</li>
+    <li><span class="cb"></span> Travel insurance purchased &amp; docs saved to phone (air evac = $15–20k without it — legally required in Galápagos)</li>
+    <li><span class="cb"></span> TCT paid online ($20/person) at siig-cgreg.gobiernogalapagos.gob.ec — complete within 48 hrs of Galápagos flight; have hotel names + flight info ready</li>
+    <li><span class="cb"></span> DJM Biosecurity Declaration completed online (free) at declaracion.abgalapagos.gob.ec — within 72 hrs of Galápagos flight; <strong>screenshot QR code to phone</strong></li>
+    <li><span class="cb"></span> All flight confirmations downloaded</li>
+    <li><span class="cb"></span> All hotel confirmations saved</li>
+  </ul>
+
+  <h3>Cash to Prepare at Home</h3>
+
+  <div class="money-item">
+    <div style="display:flex; align-items:flex-start; gap:0.6rem;">
+      <span class="cb-money"></span>
+      <div>
+        <span class="amount">$400 — National Park Fee (2 people)</span>
+        <span class="note">CRISP, UNDAMAGED USD bills only — rangers reject worn or torn currency. Seal in a separate labeled envelope before you leave. Do not touch this money for anything else.</span>
+      </div>
     </div>
-
-    <!-- ══ DESKTOP TABLE ══ -->
-    <table class="desktop-table">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Date</th>
-          <th>Day</th>
-          <th>Location</th>
-          <th>What We're Doing</th>
-          <th>Transport / Excursion</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="phase-quito">
-          <td class="day-num">1</td>
-          <td class="date">Dec 5</td>
-          <td class="dow">Saturday</td>
-          <td>Kansas City → Quito</td>
-          <td>Departure day — fly overnight to Quito</td>
-          <td class="transport">✈️ Flight (KCI → UIO)</td>
-        </tr>
-        <tr class="phase-quito">
-          <td class="day-num">2</td>
-          <td class="date">Dec 6</td>
-          <td class="dow">Sunday</td>
-          <td>Quito – Old Town</td>
-          <td>Arrive 6:10 AM · Teleférico Cable Car (optional — weather/energy dependent, morning only) · La Compañía de Jesús (Golden Church) · Plaza Grande · <strong>Fiestas de Quito</strong> (city founding anniversary — street parties, music, parades in Old Town)</td>
-          <td class="transport">✈️ Arrival · 🚡 Cable Car (optional)</td>
-        </tr>
-        <tr class="phase-cloud">
-          <td class="day-num">3</td>
-          <td class="date">Dec 7</td>
-          <td class="dow">Monday</td>
-          <td>Quito → Mindo Cloud Forest</td>
-          <td>Equator (Mitad del Mundo + Intiñan Museum) · Pululahua viewpoint · Arrive Las Terrazas de Dana · Spa</td>
-          <td class="transport">🚗 Lodge transfer (2 hrs)</td>
-        </tr>
-        <tr class="phase-cloud">
-          <td class="day-num">4</td>
-          <td class="date">Dec 8</td>
-          <td class="dow">Tuesday</td>
-          <td>Mindo Cloud Forest</td>
-          <td>Cloud forest cable car · Waterfall sanctuary hike · Chocolate factory tour · Spa</td>
-          <td class="transport">🌿 Excursions (guided)</td>
-        </tr>
-        <tr class="phase-cloud">
-          <td class="day-num">5</td>
-          <td class="date">Dec 9</td>
-          <td class="dow">Wednesday</td>
-          <td>Mindo Cloud Forest</td>
-          <td>Butterfly farm · Cooking class · Coffee plantation tour</td>
-          <td class="transport">🌿 Excursions (guided)</td>
-        </tr>
-        <tr class="phase-cloud">
-          <td class="day-num">6</td>
-          <td class="date">Dec 10</td>
-          <td class="dow">Thursday</td>
-          <td>Mindo → Quito Airport</td>
-          <td>Early birding (Yellow House reserve) · Check out · Drive back to Quito · Airport hotel</td>
-          <td class="transport">🚗 Transfer (2 hrs)</td>
-        </tr>
-        <tr class="phase-santacruz">
-          <td class="day-num">7</td>
-          <td class="date">Dec 11</td>
-          <td class="dow">Friday</td>
-          <td>Quito → Galápagos: Santa Cruz</td>
-          <td>Fly to Baltra (arr. 10:55 AM) · Hotel Santa Fe–arranged transfer (ferry + bus) to Puerto Ayora · Settle in · Explore waterfront &amp; sea lions</td>
-          <td class="transport">✈️ UIO→GPS + 🚌 Hotel transfer to Puerto Ayora</td>
-        </tr>
-        <tr class="phase-santacruz">
-          <td class="day-num">8</td>
-          <td class="date">Dec 12</td>
-          <td class="dow">Saturday</td>
-          <td>Santa Cruz → Bartolomé</td>
-          <td><strong>Sea Lion Yacht</strong> — Bartolomé Island: Pinnacle Rock summit hike · Snorkeling (penguins, sharks, turtles)</td>
-          <td class="transport">🛥️ Sea Lion Yacht (~8 hrs)</td>
-        </tr>
-        <tr class="phase-santacruz">
-          <td class="day-num">9</td>
-          <td class="date">Dec 13</td>
-          <td class="dow">Sunday</td>
-          <td>Santa Cruz – Puerto Ayora</td>
-          <td>Rest day · Charles Darwin Station · Tortuga Bay (walk one way, water taxi back ~$10/pp · bring water &amp; food) · Explore Puerto Ayora</td>
-          <td class="transport">🏖️ Self-guided</td>
-        </tr>
-        <tr class="phase-santacruz">
-          <td class="day-num">10</td>
-          <td class="date">Dec 14</td>
-          <td class="dow">Monday</td>
-          <td>Santa Cruz → North Seymour</td>
-          <td><strong>Sea Lion Yacht</strong> — North Seymour Island &amp; Las Bachas Beach: wildlife (boobies, frigatebirds, iguanas) · snorkeling</td>
-          <td class="transport">🛥️ Sea Lion Yacht (~8 hrs)</td>
-        </tr>
-        <tr class="phase-isabela">
-          <td class="day-num">11</td>
-          <td class="date">Dec 15</td>
-          <td class="dow">Tuesday</td>
-          <td>Santa Cruz → Isabela</td>
-          <td>Ferry to Isabela · Settle in at Cormorant Beach House · Concha de Perla snorkel (optional)</td>
-          <td class="transport">⛴️ Ferry (2 hrs)</td>
-        </tr>
-        <tr class="phase-isabela">
-          <td class="day-num">12</td>
-          <td class="date">Dec 16</td>
-          <td class="dow">Wednesday</td>
-          <td>Isabela – Los Túneles</td>
-          <td>Los Túneles world-class snorkeling (lava tunnels, seahorses, sharks, turtles) · lava platform walking</td>
-          <td class="transport">🚤 Agora · $164/pp · max 10 · lunch incl.</td>
-        </tr>
-        <tr class="phase-isabela">
-          <td class="day-num">13</td>
-          <td class="date">Dec 17</td>
-          <td class="dow">Thursday</td>
-          <td>Isabela → Santa Cruz</td>
-          <td>Tintoreras Islet tour (penguins, blue-footed boobies, marine iguanas, sea lions, reef sharks, sea turtles) · Ferry back to Santa Cruz · Check in to Royal Palm · Welcome dinner</td>
-          <td class="transport">🚤 Agora · $68/pp · max 16 + ⛴️ Ferry (2 hrs)</td>
-        </tr>
-        <tr class="phase-santacruz">
-          <td class="day-num">14</td>
-          <td class="date">Dec 18</td>
-          <td class="dow">Friday</td>
-          <td>Santa Cruz – Royal Palm Highlands</td>
-          <td>El Chato tortoise reserve at sunrise · Royal Palm lava tunnel · Pool &amp; grounds · Spa · Farewell Galápagos dinner</td>
-          <td class="transport">🌿 Royal Palm property</td>
-        </tr>
-        <tr class="phase-santacruz">
-          <td class="day-num">15</td>
-          <td class="date">Dec 19</td>
-          <td class="dow">Saturday</td>
-          <td>Santa Cruz → Quito</td>
-          <td>Final El Chato visit (optional) · Check out · Fly back to Quito · Airport hotel</td>
-          <td class="transport">✈️ GPS→UIO (Avianca, ~3 PM)</td>
-        </tr>
-        <tr class="phase-quito">
-          <td class="day-num">16</td>
-          <td class="date">Dec 20</td>
-          <td class="dow">Sunday</td>
-          <td>Quito → Kansas City</td>
-          <td>Early departure · Fly home</td>
-          <td class="transport">✈️ UIO→MCI (departs 8 AM)</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <!-- ══ MOBILE CARDS ══ -->
-    <div class="cards">
-
-      <div class="card">
-        <div class="card-header phase-quito">
-          <div class="card-day">1</div>
-          <div class="card-dateline"><span class="cdate">Dec 5</span><span class="cdow">Saturday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Kansas City → Quito</div>
-          <div class="card-activity">Departure day — fly overnight to Quito</div>
-          <div class="card-transport">✈️ Flight (KCI → UIO)</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header phase-quito">
-          <div class="card-day">2</div>
-          <div class="card-dateline"><span class="cdate">Dec 6</span><span class="cdow">Sunday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Quito – Old Town</div>
-          <div class="card-activity">Arrive 6:10 AM · Teleférico Cable Car (optional) · La Compañía de Jesús (Golden Church) · Plaza Grande · <strong>Fiestas de Quito</strong></div>
-          <div class="card-transport">✈️ Arrival · 🚡 Cable Car (optional)</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header phase-cloud">
-          <div class="card-day">3</div>
-          <div class="card-dateline"><span class="cdate">Dec 7</span><span class="cdow">Monday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Quito → Mindo Cloud Forest</div>
-          <div class="card-activity">Equator (Mitad del Mundo + Intiñan Museum) · Pululahua viewpoint · Arrive Las Terrazas de Dana · Spa</div>
-          <div class="card-transport">🚗 Lodge transfer (2 hrs)</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header phase-cloud">
-          <div class="card-day">4</div>
-          <div class="card-dateline"><span class="cdate">Dec 8</span><span class="cdow">Tuesday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Mindo Cloud Forest</div>
-          <div class="card-activity">Cloud forest cable car · Waterfall sanctuary hike · Chocolate factory tour · Spa</div>
-          <div class="card-transport">🌿 Excursions (guided)</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header phase-cloud">
-          <div class="card-day">5</div>
-          <div class="card-dateline"><span class="cdate">Dec 9</span><span class="cdow">Wednesday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Mindo Cloud Forest</div>
-          <div class="card-activity">Butterfly farm · Cooking class · Coffee plantation tour</div>
-          <div class="card-transport">🌿 Excursions (guided)</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header phase-cloud">
-          <div class="card-day">6</div>
-          <div class="card-dateline"><span class="cdate">Dec 10</span><span class="cdow">Thursday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Mindo → Quito Airport</div>
-          <div class="card-activity">Early birding (Yellow House reserve) · Check out · Drive back to Quito · Airport hotel</div>
-          <div class="card-transport">🚗 Transfer (2 hrs)</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header phase-santacruz">
-          <div class="card-day">7</div>
-          <div class="card-dateline"><span class="cdate">Dec 11</span><span class="cdow">Friday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Quito → Galápagos: Santa Cruz</div>
-          <div class="card-activity">Fly to Baltra (arr. 10:55 AM) · Hotel Santa Fe–arranged transfer (ferry + bus) to Puerto Ayora · Settle in · Explore waterfront &amp; sea lions</div>
-          <div class="card-transport">✈️ UIO→GPS + 🚌 Hotel transfer to Puerto Ayora</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header phase-santacruz">
-          <div class="card-day">8</div>
-          <div class="card-dateline"><span class="cdate">Dec 12</span><span class="cdow">Saturday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Santa Cruz → Bartolomé</div>
-          <div class="card-activity"><strong>Sea Lion Yacht</strong> — Bartolomé Island: Pinnacle Rock summit hike · Snorkeling (penguins, sharks, turtles)</div>
-          <div class="card-transport">🛥️ Sea Lion Yacht (~8 hrs)</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header phase-santacruz">
-          <div class="card-day">9</div>
-          <div class="card-dateline"><span class="cdate">Dec 13</span><span class="cdow">Sunday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Santa Cruz – Puerto Ayora</div>
-          <div class="card-activity">Rest day · Charles Darwin Station · Tortuga Bay (walk one way, water taxi back ~$10/pp · bring water &amp; food) · Explore Puerto Ayora</div>
-          <div class="card-transport">🏖️ Self-guided</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header phase-santacruz">
-          <div class="card-day">10</div>
-          <div class="card-dateline"><span class="cdate">Dec 14</span><span class="cdow">Monday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Santa Cruz → North Seymour</div>
-          <div class="card-activity"><strong>Sea Lion Yacht</strong> — North Seymour Island &amp; Las Bachas Beach: wildlife (boobies, frigatebirds, iguanas) · snorkeling</div>
-          <div class="card-transport">🛥️ Sea Lion Yacht (~8 hrs)</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header phase-isabela">
-          <div class="card-day">11</div>
-          <div class="card-dateline"><span class="cdate">Dec 15</span><span class="cdow">Tuesday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Santa Cruz → Isabela</div>
-          <div class="card-activity">Ferry to Isabela · Settle in at Cormorant Beach House · Concha de Perla snorkel (optional)</div>
-          <div class="card-transport">⛴️ Ferry (2 hrs)</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header phase-isabela">
-          <div class="card-day">12</div>
-          <div class="card-dateline"><span class="cdate">Dec 16</span><span class="cdow">Wednesday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Isabela – Los Túneles</div>
-          <div class="card-activity">Los Túneles world-class snorkeling (lava tunnels, seahorses, sharks, turtles) · lava platform walking</div>
-          <div class="card-transport">🚤 Agora · $164/pp · max 10 · lunch incl.</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header phase-isabela">
-          <div class="card-day">13</div>
-          <div class="card-dateline"><span class="cdate">Dec 17</span><span class="cdow">Thursday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Isabela → Santa Cruz</div>
-          <div class="card-activity">Tintoreras Islet tour (penguins, blue-footed boobies, marine iguanas, sea lions, reef sharks, sea turtles) · Ferry back to Santa Cruz · Check in to Royal Palm · Welcome dinner</div>
-          <div class="card-transport">🚤 Agora · $68/pp · max 16 + ⛴️ Ferry (2 hrs)</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header phase-santacruz">
-          <div class="card-day">14</div>
-          <div class="card-dateline"><span class="cdate">Dec 18</span><span class="cdow">Friday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Santa Cruz – Royal Palm Highlands</div>
-          <div class="card-activity">El Chato tortoise reserve at sunrise · Royal Palm lava tunnel · Pool &amp; grounds · Spa · Farewell Galápagos dinner</div>
-          <div class="card-transport">🌿 Royal Palm property</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header phase-santacruz">
-          <div class="card-day">15</div>
-          <div class="card-dateline"><span class="cdate">Dec 19</span><span class="cdow">Saturday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Santa Cruz → Quito</div>
-          <div class="card-activity">Final El Chato visit (optional) · Check out · Fly back to Quito · Airport hotel</div>
-          <div class="card-transport">✈️ GPS→UIO (Avianca, ~3 PM)</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header phase-quito">
-          <div class="card-day">16</div>
-          <div class="card-dateline"><span class="cdate">Dec 20</span><span class="cdow">Sunday</span></div>
-        </div>
-        <div class="card-body">
-          <div class="card-location">Quito → Kansas City</div>
-          <div class="card-activity">Early departure · Fly home</div>
-          <div class="card-transport">✈️ UIO→MCI (departs 8 AM)</div>
-        </div>
-      </div>
-
-    </div><!-- /cards -->
-
-    <!-- ══ HOTELS ══ -->
-    <h2>Hotels at a Glance</h2>
-
-    <div class="hotels-table-wrap">
-      <table class="desktop-table hotels-table">
-        <thead>
-          <tr>
-            <th>Phase</th>
-            <th>Nights</th>
-            <th>Hotel</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Quito</td><td>Dec 5–7</td><td>Casa el Eden</td></tr>
-          <tr><td>Mindo</td><td>Dec 7–10</td><td>Las Terrazas de Dana — Master Suite</td></tr>
-          <tr><td>Pre-Galápagos</td><td>Dec 10–11</td><td>Courtyard by Marriott Quito Airport</td></tr>
-          <tr><td>Santa Cruz</td><td>Dec 11–15</td><td>Hotel Santa Fe, Puerto Ayora</td></tr>
-          <tr><td>Isabela</td><td>Dec 15–17</td><td>Cormorant Beach House</td></tr>
-          <tr><td>Santa Cruz highlands</td><td>Dec 17–19</td><td>Royal Palm Galápagos (2 nights)</td></tr>
-          <tr><td>Return Quito</td><td>Dec 19–20</td><td>Courtyard by Marriott Quito Airport</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="hotels-cards">
-      <div class="hotel-card"><div class="hphase">Quito</div><div class="hnights">Dec 5–7</div><div class="hname">Casa el Eden</div></div>
-      <div class="hotel-card"><div class="hphase">Mindo</div><div class="hnights">Dec 7–10</div><div class="hname">Las Terrazas de Dana — Master Suite</div></div>
-      <div class="hotel-card"><div class="hphase">Pre-Galápagos</div><div class="hnights">Dec 10–11</div><div class="hname">Courtyard by Marriott Quito Airport</div></div>
-      <div class="hotel-card"><div class="hphase">Santa Cruz</div><div class="hnights">Dec 11–15</div><div class="hname">Hotel Santa Fe, Puerto Ayora</div></div>
-      <div class="hotel-card"><div class="hphase">Isabela</div><div class="hnights">Dec 15–17</div><div class="hname">Cormorant Beach House</div></div>
-      <div class="hotel-card"><div class="hphase">Santa Cruz highlands</div><div class="hnights">Dec 17–19</div><div class="hname">Royal Palm Galápagos (2 nights)</div></div>
-      <div class="hotel-card"><div class="hphase">Return Quito</div><div class="hnights">Dec 19–20</div><div class="hname">Courtyard by Marriott Quito Airport</div></div>
-    </div>
-
-    <!-- ══ GALÁPAGOS FEES ══ -->
-    <h2>Galápagos Fees &amp; Entry Requirements</h2>
-
-    <h3>Before You Leave Home</h3>
-    <table class="fees-table">
-      <thead>
-        <tr><th>Item</th><th>Cost</th><th>How to Pay</th><th>Notes</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Passport validity</td>
-          <td>—</td>
-          <td>Check now</td>
-          <td>Must be valid 6+ months past Dec 20</td>
-        </tr>
-        <tr>
-          <td>Travel insurance</td>
-          <td>Varies</td>
-          <td>Buy at home</td>
-          <td>Legally required in Galápagos; air evacuation costs $15–20k without it</td>
-        </tr>
-        <tr>
-          <td>TCT (Transit Control Card)</td>
-          <td>$20/person</td>
-          <td>Online — card</td>
-          <td>siig-cgreg.gobiernogalapagos.gob.ec — complete within 48 hrs of Galápagos flight; have hotel names and flight info ready</td>
-        </tr>
-        <tr>
-          <td>Biosecurity Declaration (DJM)</td>
-          <td>Free</td>
-          <td>Online</td>
-          <td>declaracion.abgalapagos.gob.ec — within 72 hrs of Galápagos flight; save QR code to phone</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h3>At Quito Airport (before boarding Galápagos flight)</h3>
-    <table class="fees-table">
-      <thead>
-        <tr><th>Item</th><th>Cost</th><th>How to Pay</th><th>Notes</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>TCT validation</td>
-          <td>Already paid</td>
-          <td>Counter</td>
-          <td>Present digital TCT (phone or printout) + passport + round-trip Galápagos ticket at CGREG counter before check-in — no physical card issued</td>
-        </tr>
-        <tr>
-          <td>SICGAL luggage inspection</td>
-          <td>Free</td>
-          <td>Mandatory</td>
-          <td>Physical bag check before check-in — no prohibited foods, plants, or seeds</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h3>At Baltra on Arrival</h3>
-    <table class="fees-table">
-      <thead>
-        <tr><th>Item</th><th>Cost</th><th>How to Pay</th><th>Notes</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>National Park entrance fee</td>
-          <td>$200/person</td>
-          <td><strong>Cash only</strong></td>
-          <td>Crisp, undamaged USD bills — no ATM at airport; keep receipt, boat captains need to record it</td>
-        </tr>
-        <tr>
-          <td>Biosecurity dog/luggage scan</td>
-          <td>Free</td>
-          <td>Mandatory</td>
-          <td>Do not cross the painted line until cleared</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h3>On Isabela (cash only)</h3>
-    <table class="fees-table">
-      <thead>
-        <tr><th>Item</th><th>Cost</th><th>How to Pay</th><th>Notes</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Isabela island entry fee</td>
-          <td>$10/person</td>
-          <td>Cash at dock</td>
-          <td>Paid on arrival at Puerto Villamil</td>
-        </tr>
-        <tr>
-          <td>Inter-island baggage inspections</td>
-          <td>Free</td>
-          <td>Mandatory</td>
-          <td>Bags inspected when moving between islands — no organic material</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h3>Cash Summary</h3>
-    <table class="fees-table cash-summary-table">
-      <thead>
-        <tr><th>Item</th><th>Total (2 people)</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>National Park fee</td><td>$400</td></tr>
-        <tr><td>Isabela entry fee</td><td>$20</td></tr>
-        <tr><td>TCT</td><td>$40 (paid online)</td></tr>
-        <tr><td>Isabela spending (meals, tours, tips, taxis, 3 nights)</td><td>~$600–650</td></tr>
-        <tr><td>Recommended cash into Galápagos</td><td>~$1,000–1,100</td></tr>
-      </tbody>
-    </table>
-
-    <div class="warning">⚠️ Keep the $400 park fee in a separate envelope of crisp, undamaged bills. Set it aside before you leave home and don't touch it. Park rangers reject worn or torn currency.</div>
-    <div class="warning">⚠️ Isabela has no reliable ATM. There is one pair of Banco del Pacífico ATMs on the main plaza but they are frequently out of service. Bring all cash you'll need for Isabela from Santa Cruz or Quito.</div>
-    <div class="warning">⚠️ The biosecurity declaration (DJM) is now fully digital as of January 31, 2026 — there is no paper form on the plane. Complete it online before you fly to the Galápagos or you may be delayed at the airport.</div>
-
   </div>
+
+  <div class="money-item">
+    <div style="display:flex; align-items:flex-start; gap:0.6rem;">
+      <span class="cb-money"></span>
+      <div>
+        <span class="amount">~$500–600 — Isabela Cash</span>
+        <span class="note">Isabela has no reliable ATM. Tours are pre-paid. Bring cash for 3 nights of meals, tips, taxis, and incidentals. Pull this from Santa Cruz or Quito before the ferry.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="money-item">
+    <div style="display:flex; align-items:flex-start; gap:0.6rem;">
+      <span class="cb-money"></span>
+      <div>
+        <span class="amount">$40 — TCT (already paid online, 2 people)</span>
+        <span class="note">Paid at siig-cgreg.gobiernogalapagos.gob.ec — confirm receipt saved.</span>
+      </div>
+    </div>
+  </div>
+
+  <h3>Gear</h3>
+  <ul>
+    <li><span class="cb"></span> Reef-safe sunscreen (required in Galápagos — bring from home)</li>
+    <li><span class="cb"></span> Underwater camera or GoPro — charged, memory card cleared</li>
+    <li><span class="cb"></span> Rash guard or swim shirt</li>
+    <li><span class="cb"></span> Quick-dry clothes for water days</li>
+    <li><span class="cb"></span> Light jacket (Quito + cloud forest evenings)</li>
+    <li><span class="cb"></span> Rain jacket (cloud forest)</li>
+  </ul>
+
+
+  <!-- ══ NIGHT BEFORE GALAPAGOS FLIGHT ══ -->
+  <h2>Night Before Galápagos Flight (Dec 10)</h2>
+  <ul>
+    <li><span class="cb"></span> Bags packed — no prohibited foods, plants, or seeds</li>
+    <li><span class="cb"></span> Park fee envelope ($400 crisp bills) packed and accessible</li>
+    <li><span class="cb"></span> TCT digital copy accessible on phone (+ backup printout)</li>
+    <li><span class="cb"></span> DJM QR code screenshot saved to phone</li>
+    <li><span class="cb"></span> Early alarm set — flight is 8:15 AM (hotel is attached to airport)</li>
+    <li><span class="cb"></span> Hotel Santa Fe transfer from Baltra confirmed</li>
+  </ul>
+
+
+  <!-- ══ GALAPAGOS SHUFFLE ══ -->
+  <h2>Galápagos Flight Day (Dec 11) — The Shuffle</h2>
+
+  <div class="warn-box">
+    <strong>⚠️ Strict Order — Do Not Skip or Reorder Steps</strong><br>
+    You cannot go straight to check-in or the lounge. Even with Business Class or Priority Pass, everyone waits in the same INGALA line. Add <strong>30 extra minutes</strong> to your airport arrival time.
+  </div>
+
+  <div class="step">
+    <div style="display:flex; align-items:flex-start; gap:0.65rem;">
+      <span class="cb"></span>
+      <div>
+        <div class="step-num">Step 1 · Public Area</div>
+        <div class="step-title">INGALA / Consejo de Gobierno Booth</div>
+        <div class="step-detail">Present your digital TCT + passport. (TCT already paid online — this is validation only.) If somehow not pre-paid, pay $20/person cash here.</div>
+        <div class="step-warn">⚠️ This line is the same for everyone — it's the main bottleneck.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div style="display:flex; align-items:flex-start; gap:0.65rem;">
+      <span class="cb"></span>
+      <div>
+        <div class="step-num">Step 2 · Public Area</div>
+        <div class="step-title">ABG Biosecurity Scanner</div>
+        <div class="step-detail">Bags scanned. A plastic security seal is put on your bags.</div>
+        <div class="step-warn">⚠️ Do NOT remove the seal — bags must stay sealed through check-in.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div style="display:flex; align-items:flex-start; gap:0.65rem;">
+      <span class="cb"></span>
+      <div>
+        <div class="step-num">Step 3 · Check-in</div>
+        <div class="step-title">Avianca Priority / Business Check-in</div>
+        <div class="step-detail">Check sealed bags. Get boarding pass. Only after Steps 1 &amp; 2 are done.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div style="display:flex; align-items:flex-start; gap:0.65rem;">
+      <span class="cb"></span>
+      <div>
+        <div class="step-num">Step 4 · Airside</div>
+        <div class="step-title">Security → Sala VIP Domestica</div>
+        <div class="step-detail">Clear security. Follow signs for "VIP Lounges."</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══ AT BALTRA ══ -->
+  <h2>At Baltra Airport — Arrival (Dec 11)</h2>
+
+  <div class="money-item">
+    <div style="display:flex; align-items:flex-start; gap:0.6rem;">
+      <span class="cb-money"></span>
+      <div>
+        <span class="amount">$400 — National Park Fee (2 people, $200 each)</span>
+        <span class="note">Cash only. Crisp, undamaged USD bills. Have the pre-prepared envelope ready. Keep the receipt — boat captains must record it.</span>
+      </div>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="cb"></span> Do NOT cross the painted biosecurity line until cleared by dog/luggage scan</li>
+    <li><span class="cb"></span> Board Hotel Santa Fe–arranged transfer (ferry across Itabaca Channel, then bus to Puerto Ayora)</li>
+  </ul>
+
+
+  <!-- ══ FERRY TO ISABELA ══ -->
+  <h2>Ferry to Isabela (Dec 15)</h2>
+
+  <div class="money-item">
+    <div style="display:flex; align-items:flex-start; gap:0.6rem;">
+      <span class="cb-money"></span>
+      <div>
+        <span class="amount">$20 — Isabela Entry Fee (2 people, $10 each)</span>
+        <span class="note">Cash at the dock on arrival in Puerto Villamil.</span>
+      </div>
+    </div>
+  </div>
+
+  <ul>
+    <li><span class="cb"></span> Bags inspected for organic material before boarding — no food, plants, seeds</li>
+    <li><span class="cb"></span> Sit center/lower deck on ferry (2 hrs, can be rough)</li>
+    <li><span class="cb"></span> Bring jacket + snacks for crossing</li>
+  </ul>
+
+
+  <!-- ══ TOUR DAYS ══ -->
+  <h2>Tour Days — Bring Every Time</h2>
+  <ul>
+    <li><span class="cb"></span> Underwater camera / GoPro — charged</li>
+    <li><span class="cb"></span> Reef-safe sunscreen</li>
+    <li><span class="cb"></span> Rash guard / swim shirt</li>
+    <li><span class="cb"></span> Hat + sunglasses</li>
+    <li><span class="cb"></span> Water bottle + snacks</li>
+    <li><span class="cb"></span> Towel</li>
+  </ul>
+
+  <h3>Tour Schedule</h3>
+  <table>
+    <thead>
+      <tr><th>Date</th><th>Tour</th><th>Operator</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Dec 12 (Sat)</td><td>Bartolomé Island — Pinnacle Rock + snorkel</td><td>Sea Lion Yacht</td></tr>
+      <tr><td>Dec 14 (Mon)</td><td>North Seymour + Las Bachas Beach</td><td>Sea Lion Yacht</td></tr>
+      <tr><td>Dec 16 (Wed)</td><td>Los Túneles — world-class snorkel (max 10)</td><td>Agora</td></tr>
+      <tr><td>Dec 17 (Thu AM)</td><td>Tintoreras Islet (max 16)</td><td>Agora</td></tr>
+    </tbody>
+  </table>
+
+
+  <!-- ══ CASH SUMMARY ══ -->
+  <h2>Full Cash Summary</h2>
+
+  <div class="cash-block">
+    <div class="cash-block-header">CASH TO HAVE ON HAND (2 PEOPLE)</div>
+
+    <div class="cash-row">
+      <div class="cash-label">
+        National Park fee (Baltra, on arrival)
+        <span class="cash-note">Crisp, undamaged USD only — rangers reject worn/torn bills. Pre-seal in labeled envelope at home.</span>
+      </div>
+      <div class="cash-amt">$400</div>
+    </div>
+
+    <div class="cash-row">
+      <div class="cash-label">
+        Isabela entry fee (dock, on arrival)
+        <span class="cash-note">$10/person, cash at Puerto Villamil dock.</span>
+      </div>
+      <div class="cash-amt">$20</div>
+    </div>
+
+    <div class="cash-row">
+      <div class="cash-label">
+        Isabela spending — 3 nights
+        <span class="cash-note">Tours are pre-paid. Bring cash for meals, tips, taxis, and incidentals. No reliable ATM on Isabela — pull this from Santa Cruz or Quito before the ferry.</span>
+      </div>
+      <div class="cash-amt">~$500–600</div>
+    </div>
+
+    <div class="cash-row">
+      <div class="cash-label">
+        TCT (Transit Control Card)
+        <span class="cash-note">Already paid online before trip. Noted here for completeness.</span>
+      </div>
+      <div class="cash-amt">$40 ✓</div>
+    </div>
+
+    <div class="cash-row total-cash">
+      <div class="cash-label">RECOMMENDED CASH INTO GALÁPAGOS</div>
+      <div class="cash-amt">~$950–1,050</div>
+    </div>
+  </div>
+
+  <div class="warn-box" style="margin-top:0.75rem;">
+    ⚠️ <strong>Isabela ATM Warning:</strong> There is one pair of Banco del Pacífico ATMs on the main plaza in Puerto Villamil — they are frequently out of service. Do not count on them. Bring all cash you need for Isabela before you board the ferry.
+  </div>
+
+
+  <!-- ══ CONFIRM BEFORE TRIP ══ -->
+  <h2>Confirm Before Trip</h2>
+  <ul>
+    <li class="confirm-item"><span class="cb"></span> Sea Lion Yacht — Bartolomé (Dec 12, Saturday)</li>
+    <li class="confirm-item"><span class="cb"></span> Sea Lion Yacht — North Seymour (Dec 14, Monday)</li>
+    <li class="confirm-item"><span class="cb"></span> Agora — Los Túneles (Dec 16, Wednesday) · max 10 guests</li>
+    <li class="confirm-item"><span class="cb"></span> Agora — Tintoreras Islet (Dec 17, Thursday AM) · max 16 guests</li>
+    <li class="confirm-item"><span class="cb"></span> Yellow House birding reserve, Mindo (Dec 10 AM) · $95 for two</li>
+    <li class="confirm-item"><span class="cb"></span> Las Terrazas de Dana cloud forest package (all 4 days, Dec 7–10)</li>
+    <li class="confirm-item"><span class="cb"></span> Royal Palm Galápagos transfer from Puerto Ayora (Dec 17 evening)</li>
+  </ul>
+
+  <h3>Flights (all 4 legs)</h3>
+  <ul>
+    <li class="confirm-item"><span class="cb"></span> ✈️ KCI → UIO · Dec 5 · departure from Kansas City</li>
+    <li class="confirm-item"><span class="cb"></span> ✈️ UIO → GPS (Baltra) · Dec 11 · 8:15 AM · Avianca</li>
+    <li class="confirm-item"><span class="cb"></span> ✈️ GPS → UIO · Dec 19 · ~3:00 PM · Avianca</li>
+    <li class="confirm-item"><span class="cb"></span> ✈️ UIO → MCI · Dec 20 · 8:00 AM · Avianca (or partner) · ~15 hrs with connection</li>
+  </ul>
+
+  <h3>Hotels (all 7 stays)</h3>
+  <ul>
+    <li class="confirm-item"><span class="cb"></span> Casa el Eden — Quito Old Town · Dec 5–7</li>
+    <li class="confirm-item"><span class="cb"></span> Las Terrazas de Dana — Mindo Master Suite · Dec 7–10</li>
+    <li class="confirm-item"><span class="cb"></span> Courtyard by Marriott Quito Airport · Dec 10–11</li>
+    <li class="confirm-item"><span class="cb"></span> Hotel Santa Fe — Puerto Ayora, Santa Cruz · Dec 11–15</li>
+    <li class="confirm-item"><span class="cb"></span> Cormorant Beach House — Isabela · Dec 15–17</li>
+    <li class="confirm-item"><span class="cb"></span> Royal Palm Galápagos — Santa Cruz highlands · Dec 17–19</li>
+    <li class="confirm-item"><span class="cb"></span> Courtyard by Marriott Quito Airport · Dec 19–20</li>
+  </ul>
+
+  <h3>Other</h3>
+  <ul>
+    <li class="confirm-item"><span class="cb"></span> Travel insurance active + docs saved</li>
+  </ul>
+
+
+  <!-- ══ LODGE NOTES ══ -->
+  <h2>Useful Notes</h2>
+  <ul>
+    <li><span class="cb"></span> Las Terrazas de Dana (Mindo) — WhatsApp: <strong>+593 939565819</strong></li>
+    <li><span class="cb"></span> Spa discount code at Las Terrazas: <strong>SPA20</strong> (valid for direct bookings)</li>
+    <li><span class="cb"></span> Tortuga Bay water taxi: ~$10/pp one way — departs 9 AM &amp; 2 PM; pickup at 2 PM &amp; 5 PM. Bring water + food, zero facilities at beach.</li>
+    <li><span class="cb"></span> El Chato tortoise reserve (Dec 18): ~$5–10 entry, short taxi from Royal Palm. Go at sunrise — best light, fewest visitors.</li>
+  </ul>
+
 </body>
 </html>
