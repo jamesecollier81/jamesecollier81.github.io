@@ -35,7 +35,7 @@
       content: '';
       position: fixed;
       inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOcta[...]
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E")
       pointer-events: none;
       z-index: 0;
       opacity: 0.4;
@@ -201,16 +201,17 @@
 
     .event-card:hover {
       background: var(--surface2);
-      border-color: var(--accent);
+      border-top-color: var(--accent);
+      border-right-color: var(--accent);
+      border-bottom-color: var(--accent);
     }
 
     .event-card.on-now-card {
       background: var(--on-now-dim);
-      border-color: var(--on-now);
-      border-left-color: var(--on-now);
+      border: 1px solid var(--on-now);
     }
 
-    .event-card.on-now-card:hover { border-color: var(--on-now); filter: brightness(1.1); }
+    .event-card.on-now-card:hover { border-top-color: var(--on-now); border-right-color: var(--on-now); border-bottom-color: var(--on-now); filter: brightness(1.1); }
 
     .event-card.highlighted {
       box-shadow: inset 0 0 0 2px var(--highlight), 0 0 12px rgba(251, 191, 36, 0.3);
@@ -715,7 +716,7 @@ function makeCard(e, isOnNow) {
 
   const card = document.createElement('div');
   card.className = 'event-card' + (isOnNow ? ' on-now-card' : '') + (highlighted ? ' highlighted' : '');
-  card.style.borderLeftColor = color;
+  if (!isOnNow) card.style.borderLeftColor = color;
 
   const monthStr = startD ? startD.toLocaleDateString('en-US',{month:'short'}) : '';
   const dayStr   = startD ? startD.getDate() : '?';
