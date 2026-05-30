@@ -17,6 +17,7 @@
       --on-now: #2dba8c;
       --on-now-dim: #1a3d30;
       --warn: #f0a84a;
+      --highlight: #fbbf24;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -34,7 +35,7 @@
       content: '';
       position: fixed;
       inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOcta[...]
       pointer-events: none;
       z-index: 0;
       opacity: 0.4;
@@ -195,7 +196,7 @@
       gap: 14px;
       align-items: flex-start;
       cursor: pointer;
-      transition: border-color 0.15s, background 0.15s;
+      transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
     }
 
     .event-card:hover {
@@ -210,6 +211,15 @@
     }
 
     .event-card.on-now-card:hover { border-color: var(--on-now); filter: brightness(1.1); }
+
+    .event-card.highlighted {
+      border: 2px solid var(--highlight);
+      box-shadow: 0 0 12px rgba(251, 191, 36, 0.3);
+    }
+
+    .event-card.highlighted:hover {
+      box-shadow: 0 0 16px rgba(251, 191, 36, 0.5);
+    }
 
     /* Date block */
     .date-block {
@@ -303,6 +313,13 @@
     .countdown.soon { color: var(--warn); }
     .countdown.on-now-label { color: var(--on-now); font-weight: 500; }
 
+    .highlight-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: var(--highlight);
+      letter-spacing: 0.08em;
+    }
+
     /* Empty state */
     .empty {
       color: var(--muted);
@@ -338,6 +355,11 @@
       padding: 28px;
       max-width: 420px;
       width: 90%;
+    }
+
+    .modal.highlighted {
+      border: 2px solid var(--highlight);
+      box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
     }
 
     .modal-top {
@@ -407,7 +429,7 @@
 <div id="board"></div>
 
 <div class="modal-overlay" id="modal" onclick="closeModalOverlay(event)">
-  <div class="modal">
+  <div class="modal" id="modal-content">
     <div class="modal-top">
       <h2 id="modal-title"></h2>
       <button class="modal-close" onclick="document.getElementById('modal').classList.remove('open')">&#215;</button>
@@ -503,6 +525,11 @@ function fd(d) {
 function daysUntil(d) {
   const today = new Date(); today.setHours(0,0,0,0);
   return Math.round((d - today) / 86400000);
+}
+
+function isHighlighted(e) {
+  const h = gf(e, 'highlights');
+  return h && h.trim().length > 0;
 }
 
 function buildFilters() {
@@ -686,9 +713,10 @@ function makeCard(e, isOnNow) {
   const cat    = gf(e,'category');
   const notes  = gf(e,'notes');
   const color  = catColor(cat);
+  const highlighted = isHighlighted(e);
 
   const card = document.createElement('div');
-  card.className = 'event-card' + (isOnNow ? ' on-now-card' : '');
+  card.className = 'event-card' + (isOnNow ? ' on-now-card' : '') + (highlighted ? ' highlighted' : '');
   card.style.borderLeftColor = color;
 
   const monthStr = startD ? startD.toLocaleDateString('en-US',{month:'short'}) : '';
@@ -715,6 +743,7 @@ function makeCard(e, isOnNow) {
       ${notes ? `<div class="event-notes">${notes}</div>` : ''}
     </div>
     <div class="card-right">
+      ${highlighted ? `<span class="highlight-badge">★</span>` : ''}
       ${cat ? `<span class="cat-badge" style="background:${color}20;color:${color};border-color:${color}44">${cat}</span>` : ''}
       <span class="countdown ${cd.cls}">${cd.text}</span>
     </div>
@@ -728,6 +757,9 @@ function openModal(e) {
   const startD = pd(gf(e,'start_date'));
   const endD   = pd(gf(e,'end_date'));
   const link   = gf(e,'link');
+  const highlighted = isHighlighted(e);
+  
+  document.getElementById('modal-content').classList.toggle('highlighted', highlighted);
   document.getElementById('modal-title').textContent = gf(e,'event_name');
   let meta = '';
   if (startD) {
