@@ -213,12 +213,11 @@
     .event-card.on-now-card:hover { border-color: var(--on-now); filter: brightness(1.1); }
 
     .event-card.highlighted {
-      border: 2px solid var(--highlight);
-      box-shadow: 0 0 12px rgba(251, 191, 36, 0.3);
+      box-shadow: inset 0 0 0 2px var(--highlight), 0 0 12px rgba(251, 191, 36, 0.3);
     }
 
     .event-card.highlighted:hover {
-      box-shadow: 0 0 16px rgba(251, 191, 36, 0.5);
+      box-shadow: inset 0 0 0 2px var(--highlight), 0 0 16px rgba(251, 191, 36, 0.5);
     }
 
     /* Date block */
@@ -358,8 +357,7 @@
     }
 
     .modal.highlighted {
-      border: 2px solid var(--highlight);
-      box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+      box-shadow: inset 0 0 0 2px var(--highlight), 0 0 20px rgba(251, 191, 36, 0.3);
     }
 
     .modal-top {
