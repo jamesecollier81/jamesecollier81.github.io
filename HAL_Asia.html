@@ -341,6 +341,98 @@
     background:var(--ink);
   }
 
+  /* ---------- OPTION COMPARISON ---------- */
+  .option-compare{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1.4rem;
+    margin-top:1.6rem;
+  }
+  .option-card{
+    border-radius:10px;
+    padding:1.5rem 1.5rem 1.7rem;
+    border:1px solid var(--line);
+    background:var(--paper-dim);
+    display:flex;
+    flex-direction:column;
+  }
+  .option-card.option-jade{border-top:4px solid var(--jade);}
+  .option-card.option-gold{border-top:4px solid var(--gold);}
+  .option-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:0.6rem;
+    margin-bottom:0.3rem;
+  }
+  .option-head h3{margin:0; font-size:1.2rem; font-weight:700;}
+  .option-tagline{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.68rem;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--ink-faint);
+    margin:0 0 1.1rem;
+  }
+  .option-route{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.74rem;
+    background:var(--ink);
+    color:var(--paper);
+    padding:0.7rem 0.85rem;
+    border-radius:6px;
+    margin-bottom:1.1rem;
+    line-height:1.5;
+  }
+  .option-route .arrow{color:var(--gold-dim); margin:0 0.25rem;}
+  .option-card ul{margin:0 0 1.1rem; padding-left:1.15rem;}
+  .option-card li{font-size:0.92rem; margin-bottom:0.45rem;}
+  .option-stats{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.5rem;
+    margin-top:auto;
+    padding-top:1rem;
+    border-top:1px dashed var(--line);
+  }
+  .stat-chip{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.66rem;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:0.25rem 0.55rem;
+    color:var(--ink-soft);
+  }
+  .tattoo-note{
+    margin-top:1.6rem;
+    background:var(--vermilion-dim);
+    border-left:3px solid var(--vermilion);
+    border-radius:0 8px 8px 0;
+    padding:1.1rem 1.3rem;
+  }
+  .tattoo-note .tn-head{
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+    font-weight:600;
+    color:var(--vermilion);
+    margin-bottom:0.5rem;
+    font-size:0.98rem;
+  }
+  .tattoo-note p{margin:0 0 0.55rem; font-size:0.92rem; color:var(--ink-soft);}
+  .tattoo-note p:last-child{margin-bottom:0;}
+  .tattoo-note .verify{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.7rem;
+    color:var(--ink-faint);
+  }
+  @media (max-width: 680px){
+    .option-compare{grid-template-columns:1fr;}
+  }
+
   @media (max-width: 600px){
     .compare-grid{grid-template-columns:1fr;}
     .k-day{grid-template-columns:1fr;}
@@ -543,6 +635,61 @@
       <li><b>Luggage Management:</b> Don't drag cruise-sized luggage onto mountain trains or down Kusatsu's snowy, steep paths. Forward large suitcases straight from the Tokyo port to the departure airport via Takkyubin, for around $20 a bag.</li>
       <li><b>Winter Packing:</b> Coastal ports like Kochi and Shimizu see biting Pacific winds in February, while Kusatsu is a high-altitude snow zone. Pack high-quality, lightweight windproof layers to protect gear and stay comfortable shooting outdoors.</li>
     </ol>
+  </section>
+
+  <!-- MOUNTAIN OPTION COMPARISON -->
+  <section>
+    <div class="part-label"><span class="stamp">?</span>Decision Point — Feb 27 – Mar 1</div>
+    <h2>🏔️ Mountain Extension — Two Options</h2>
+    <p class="note">Both options use the same 4-day window after stepping off the ship in Tokyo. They run on different rail corridors, so this is an either/or choice, not an add-on.</p>
+
+    <div class="option-compare">
+      <div class="option-card option-gold">
+        <div class="option-head"><h3>Option A · Kusatsu Onsen</h3></div>
+        <div class="option-tagline">The original plan</div>
+        <div class="option-route">
+          [Tokyo] <span class="arrow">→</span> Ltd. Express (2.5 hrs) <span class="arrow">→</span> [Naganohara-Kusatsuguchi] <span class="arrow">→</span> Bus (25m) <span class="arrow">→</span> [Kusatsu]
+        </div>
+        <ul>
+          <li>Yubatake hot water field, snowy Sainokawara Park walks</li>
+          <li>Yumomi performances + multi-course winter kaiseki</li>
+          <li>Independent coffee roasters, onsen manju, night steam photography</li>
+          <li>Ranked Japan's #1 onsen town by many travelers</li>
+        </ul>
+        <div class="option-stats">
+          <span class="stat-chip">~3 hrs each way</span>
+          <span class="stat-chip">Single line, no transfer detour</span>
+          <span class="stat-chip">Tattoo-friendly: confirmed</span>
+        </div>
+      </div>
+
+      <div class="option-card option-jade">
+        <div class="option-head"><h3>Option B · Karuizawa + Jigokudani</h3></div>
+        <div class="option-tagline">The new idea</div>
+        <div class="option-route">
+          [Tokyo] <span class="arrow">→</span> Shinkansen (~1 hr) <span class="arrow">→</span> [Karuizawa] <span class="arrow">→</span> Shinkansen (~25m) <span class="arrow">→</span> [Nagano] <span class="arrow">→</span> Nagaden Line (~45m) <span class="arrow">→</span> [Yudanaka / Shibu Onsen]
+        </div>
+        <ul>
+          <li>Karuizawa: highland resort town, old villa lanes, mountain air</li>
+          <li>Jigokudani Snow Monkey Park: wild macaques bathing in snow — a genuinely rare photo subject</li>
+          <li>Shibu Onsen: nine historic public bathhouses, yukata-and-geta streets</li>
+          <li>Same single-corridor shinkansen line out and back — no backtracking</li>
+        </ul>
+        <div class="option-stats">
+          <span class="stat-chip">~2 hrs each way</span>
+          <span class="stat-chip">One continuous rail line</span>
+          <span class="stat-chip">Tattoo-friendly: mixed, verify</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tattoo-note">
+      <div class="tn-head">🏷️ A note on tattoos</div>
+      <p><b>Kusatsu (Option A)</b> is well-documented as tattoo-friendly. The Kusatsu Onsen Tourism Association and multiple independent travel guides report all three major public bathhouses — Sainokawara Open-Air Bath, Otaki no Yu, and Gozanoyu — accept visible tattoos with no covering required. This is consistent across enough sources that it's a reasonably safe bet, though individual ryokan-owned private baths can still set their own house rules.</p>
+      <p><b>Shibu / Yudanaka (Option B)</b> is murkier. Some travelers report the nine public sotoyu in Shibu are tattoo-tolerant in practice, but at least one well-known Yudanaka ryokan explicitly restricts larger tattoos in its public baths (while still offering a private in-room or reservable bath as a workaround). It's not a flat "no," but it's not the same clean green light Kusatsu gets.</p>
+      <p>If you go with Option B, the safer move is to book a ryokan that <i>guarantees</i> a private bath (uchiburo or kashikiri) rather than relying on public bathhouse access — that sidesteps the question entirely.</p>
+      <p class="verify">Based on travel-guide and traveler-report sources, not an official policy database — worth a direct message to your specific ryokan before booking either way, since policies are set venue-by-venue and can change.</p>
+    </div>
   </section>
 
 </main>
