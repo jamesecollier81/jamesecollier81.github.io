@@ -1,0 +1,181 @@
+<title>Mullen Rd Maintenance Timeline</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: narrow single column; month label in a left rail (mono), entries to the right; stacks on phones. */
+:root {
+  --bg: #f4f7f8;
+  --surface: #ffffff;
+  --fg: #19252b;
+  --muted: #55646c;
+  --line: #d3dde2;
+  --accent: #1d6d8a;
+  --accent-soft: #e0eff4;
+  --now: #b4560f;
+  --now-soft: #fbeadb;
+  --ok: #23724a;
+  --ok-soft: #dff1e7;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11191d; --surface: #182328; --fg: #e4ecef; --muted: #9aabb3; --line: #2c3a41;
+    --accent: #6cc1dd; --accent-soft: #1a3540; --now: #f0a46b; --now-soft: #3a2a1b;
+    --ok: #74d09c; --ok-soft: #1a3426;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11191d; --surface: #182328; --fg: #e4ecef; --muted: #9aabb3; --line: #2c3a41;
+  --accent: #6cc1dd; --accent-soft: #1a3540; --now: #f0a46b; --now-soft: #3a2a1b;
+  --ok: #74d09c; --ok-soft: #1a3426;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.55;
+  padding-block: 40px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+main { max-width: 760px; margin: 0 auto; }
+header { padding-bottom: 24px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 10px; }
+h1 { font-size: clamp(26px, 5vw, 36px); line-height: 1.15; font-weight: 600; margin: 0 0 14px; text-wrap: balance; letter-spacing: -.01em; }
+.lede { color: var(--muted); margin: 0 0 16px; max-width: 62ch; }
+.lede strong { color: var(--fg); font-weight: 500; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+.month { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 8px 28px; padding: 28px 0; border-bottom: 1px solid var(--line); }
+.month:last-of-type { border-bottom: 0; }
+.label { font-family: var(--font-mono); font-size: 13px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); padding-top: 3px; }
+.label small { display: block; font-size: 11px; color: var(--muted); font-weight: 400; margin-top: 2px; letter-spacing: .06em; }
+h2 { font-size: 18px; font-weight: 600; margin: 0 0 14px; }
+.items { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.item { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 12px 16px; min-width: 0; }
+.item h3 { font-size: 14px; font-weight: 600; margin: 0 0 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+.item p { margin: 0; color: var(--muted); font-size: 15px; overflow-wrap: anywhere; }
+.item.now { border-color: var(--now); background: var(--now-soft); }
+.item.now h3 { color: var(--now); }
+.status { font-family: var(--font-mono); font-size: 11px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; padding: 1px 8px; border-radius: 3px; border: 1px solid currentColor; white-space: nowrap; }
+.s-resolved { color: var(--ok); background: var(--ok-soft); }
+.s-open { color: var(--now); background: var(--surface); }
+.s-unclear { color: var(--muted); background: transparent; border-style: dashed; }
+.s-scheduled { color: var(--accent); background: var(--accent-soft); }
+footer { margin-top: 16px; color: var(--muted); font-family: var(--font-mono); font-size: 12px; }
+@media (max-width: 560px) {
+  body { padding-block: 28px 40px; }
+  .month { grid-template-columns: minmax(0, 1fr); padding: 22px 0; gap: 6px; }
+  .label small { display: inline; margin-left: 8px; }
+}
+</style>
+
+<main>
+  <header>
+    <p class="eyebrow">8338 Mullen Rd &middot; 2026</p>
+    <h1>Maintenance &amp; Communication Timeline</h1>
+    <p class="lede">Correspondence with <strong>Tayler Still</strong> at <strong>Integrity 1st Properties</strong>, February to October 2026: move-in snags, a window repair, HVAC and refrigerator failures, ongoing lawn and sprinkler issues, and an open basement water leak.</p>
+    <div class="legend" aria-label="Status key">
+      <span class="status s-resolved">Resolved</span>
+      <span class="status s-open">Open</span>
+      <span class="status s-scheduled">Scheduled</span>
+      <span class="status s-unclear">Unclear</span>
+    </div>
+  </header>
+
+  <section class="month" id="feb">
+    <div class="label">Feb<small>Application</small></div>
+    <div>
+      <h2>Application phase</h2>
+      <ul class="items">
+        <li class="item"><h3>Application &amp; terms</h3><p>Inquired about availability, lawn care (confirmed included) and pet policy (2 small dogs).</p></li>
+        <li class="item"><h3>Approval &amp; lease</h3><p>Application approved; lease and deposits finalized after reviewing video walkthroughs of the home and basement (carpet stains noted).</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="month" id="mar">
+    <div class="label">Mar<small>Move-in</small></div>
+    <div>
+      <h2>Move-in &amp; initial snags</h2>
+      <ul class="items">
+        <li class="item"><h3>Move-in</h3><p>Walkthrough conducted March 20.</p></li>
+        <li class="item"><h3>Maintenance<span class="status s-resolved">Resolved</span></h3><p>Reported loose kitchen faucet, microwave hood, burned-out lights, garage issues (keypad/remote), fireplace pilot light and electric meter mounting.</p></li>
+        <li class="item"><h3>Resolution<span class="status s-resolved">Resolved</span></h3><p>Faucet and lights addressed; contractors scheduled for garage and fireplace; trash/recycling pickup issues resolved.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="month" id="apr">
+    <div class="label">Apr<small>Window &amp; lawn</small></div>
+    <div>
+      <h2>Window, landscaping &amp; sprinklers</h2>
+      <ul class="items">
+        <li class="item"><h3>Kitchen window<span class="status s-resolved">Resolved</span></h3><p>Reported April 1: cracked outer pane and significant wood rot on the exterior frame.</p></li>
+        <li class="item"><h3>Sprinklers<span class="status s-resolved">Resolved</span></h3><p>Connected to Rachio app but water flow failed; unable to locate basement shutoff valve.</p></li>
+        <li class="item"><h3>Lawn care</h3><p>Requested clarification on mowing schedule vs. neighborhood maintenance.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="month" id="may">
+    <div class="label">May<small>Escalation</small></div>
+    <div>
+      <h2>Escalation &amp; HVAC</h2>
+      <ul class="items">
+        <li class="item"><h3>Window escalation<span class="status s-resolved">Resolved</span></h3><p>Escalated May 18 with a formal notice regarding window and trim, citing lack of progress and structural concerns (ants/water).</p></li>
+        <li class="item"><h3>Repair<span class="status s-resolved">Resolved</span></h3><p>Bids collected; window ordered May 28 (estimated 7-8 week delivery).</p></li>
+        <li class="item"><h3>HVAC</h3><p>Confirmed on the list for routine maintenance.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="month" id="jun">
+    <div class="label">Jun<small>Repairs</small></div>
+    <div>
+      <h2>Repairs completed</h2>
+      <ul class="items">
+        <li class="item"><h3>Window<span class="status s-resolved">Resolved</span></h3><p>Window and trim repairs completed; installation confirmed by Butch in late June. Work order resolved.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="month" id="jul">
+    <div class="label">Jul<small>External</small></div>
+    <div>
+      <h2>External issues</h2>
+      <ul class="items">
+        <li class="item"><h3>City violation</h3><p>Inspected for high vegetation behind the fence; passed to Tayler for action.</p></li>
+        <li class="item"><h3>HVAC assessment<span class="status s-resolved">Resolved</span></h3><p>Initial assessment in late July: the system caused a breaker to flip, and the inspector noted failing insulation on wires and a deteriorating motor. Management rejected a blower motor repair due to the unit's age.</p></li>
+        <li class="item"><h3>Pest control<span class="status s-unclear">Unclear</span></h3><p>Reported ants entering the wood near the front door. No response received.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="month" id="aug">
+    <div class="label">Aug<small>HVAC &amp; fridge</small></div>
+    <div>
+      <h2>HVAC &amp; refrigerator issues</h2>
+      <ul class="items">
+        <li class="item"><h3>HVAC replacement<span class="status s-resolved">Resolved</span></h3><p>New unit authorized in mid-August after coordinating with the home warranty company; installation completed August 31. Work order resolved.</p></li>
+        <li class="item"><h3>Refrigerator<span class="status s-resolved">Resolved</span></h3><p>Reported puddle; technician visit coordinated via warranty. Repair completed.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="month" id="sep-oct">
+    <div class="label">Sep&ndash;Oct<small>Seasonal</small></div>
+    <div>
+      <h2>Seasonal maintenance</h2>
+      <ul class="items">
+        <li class="item now"><h3>Sprinkler winterization<span class="status s-scheduled">Scheduled</span></h3><p>Scheduled for October 14.</p></li>
+        <li class="item"><h3>Lawn care<span class="status s-open">Open</span></h3><p>Reported ongoing performance issues and property damage (downspouts/pipes).</p></li>
+        <li class="item now"><h3>Basement water leak<span class="status s-open">Open</span></h3><p>Reported October 13 at 9:30 PM: active rainwater leakage entering the basement around the window frame and ceiling (Maintenance Request #104443, high priority). It had stopped for the moment by 9:33 PM but needs to be addressed quickly.</p></li>
+        <li class="item now"><h3>Leak follow-up<span class="status s-open">Open</span></h3><p>October 14: Tayler sent the request to the owners (9:18 AM). Status is Open - Awaiting Owner Approval; vendor not yet assigned and no maintenance window scheduled. In daylight, noted the leak seems related to the gutter downspout that runs from the roof through the back porch and into the ground near that basement window; the porch and ground there are much wetter than surrounding areas.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>Summary of correspondence as of October 14, 2026.</footer>
+</main>
